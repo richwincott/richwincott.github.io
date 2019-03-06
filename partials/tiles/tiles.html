@@ -1,0 +1,41 @@
+<ul class="tiles row">
+    <li class="col-xs-6 col-sm-4 col-md-3" ng-click="$ctrl.changeUrl('#/1/' + $index)" ng-repeat="tile in $ctrl.tiles" style="cursor:pointer">
+        <div class="thumbnail" style="background: url('{{tile.thumbnail}}') center;">
+            <div class="options btn-group" ng-click="$event.stopPropagation();" uib-dropdown is-open="$ctrl.tilesStatus.isopen{{$index}}" uib-dropdown-toggle ng-disabled="disabled">
+                    <i class="fa fa-ellipsis-v fa-lg" aria-hidden="true"></i>
+                <ul class="dropdown-menu dropdown-menu-right" uib-dropdown-menu role="menu" aria-labelledby="single-button" style="padding-bottom:10px">
+                    <li role="menuitem"><a ng-click="$ctrl.openUrl(tile.url)">Open in new tab</a></li>
+                    <li ng-if="tile.githuburl" class="divider"></li>
+                    <li ng-if="tile.githuburl" role="menuitem"><a ng-click="$ctrl.openUrl(tile.githuburl)">View on GitHub</a></li>                  
+                    <li class="divider"></li>
+                    <li role="menuitem"><a ng-click="$ctrl.remove(1, $index)">Hide this tile<span style="position:absolute; bottom:2px; right:30px; color:red; font-weight:bold; font-size:25px;">&times;</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="info">           
+            {{tile.title}}<br/>
+            <span style="font-size:10px;">Status: {{tile.status}} | Type: {{tile.type}}</span>
+        </div>
+    </li>
+</ul>
+<br/>
+<div class="subHeading">Old projects <input class="form-control custom-checkbox" ng-model="$ctrl.tiles2Visible" type="checkbox" /></div>
+<ul class="tiles row" ng-show="$ctrl.tiles2Visible">
+    <li class="col-xs-6 col-sm-4 col-md-3" ng-click="$ctrl.changeUrl('#/2/' + $index)" ng-repeat="tile in $ctrl.tiles2" style="cursor:pointer">
+        <div class="thumbnail" style="background: url('{{tile.thumbnail}}') center;">
+            <div class="options btn-group" ng-click="$event.stopPropagation();" uib-dropdown is-open="$ctrl.tilesStatus2.isopen{{$index}}" uib-dropdown-toggle ng-disabled="disabled">
+                    <i class="fa fa-ellipsis-v fa-lg" aria-hidden="true"></i>
+                <ul class="dropdown-menu dropdown-menu-right" uib-dropdown-menu role="menu" aria-labelledby="single-button" style="padding-bottom:10px">
+                    <li role="menuitem"><a ng-click="$ctrl.openUrl(tile.url)">Open in new tab</a></li>
+                    <li class="divider"></li>
+                    <li role="menuitem"><a ng-click="$ctrl.remove(2, $index)"><span class="label label-warning">Hide</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="info">           
+            {{tile.title}}<br/>
+            <span style="font-size:10px;">Status: {{tile.status}} | Type: {{tile.type}}</span>
+        </div>
+    </li>
+</ul>
+<br/>

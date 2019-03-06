@@ -1,0 +1,175 @@
+<div class="hidden-xs background blur" style="background-image:url({{$ctrl.images[$ctrl.randomNo]}})" parallax-background parallax-ratio="0.4" parallax-vertical-offset="0"></div>
+
+<div class="hidden-sm hidden-md hidden-lg background blur" style="background-image:url({{$ctrl.images[$ctrl.randomNo]}})"></div>
+
+<div style="background-color:rgba(0, 0, 0, 0.2);">
+    <div class="container">
+        <div class="row">
+            <div class="toggle" ng-class="{'expand':$ctrl.toggleMenu}" ng-click="$ctrl.toggleMenu=!$ctrl.toggleMenu">
+                <ul class="hamburger list-unstyled" ng-class="{'open':$ctrl.toggleMenu}">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <nav ng-class="{'show':$ctrl.toggleMenu}">	
+                <div class="hidden-sm hidden-md hidden-lg">
+                    <a class="btn btn-default my-btn" style="padding:8px; width:100%; border-radius: 0px; text-align:left;" ng-click="$ctrl.openLoginModal()">
+                        <span ng-if="$ctrl.user.token">
+                            <div style="float:left; width:55px; height:55px; background:url('{{$ctrl.user.information.avatar_urls[96].split('-96x96')[0]}}{{$ctrl.user.information.avatar_urls[96].split('-96x96')[1]}}') no-repeat; background-size:cover; background-position:center; border-radius:6px; margin-left:16px;"></div>
+                            <span style="padding-left:10px; font-size: 16px;">Hi, {{$ctrl.user.token.user_display_name}}</span>
+                        </span>
+                        <div ng-if="!$ctrl.user.token" style="font-size: 11px; font-weight:bold; color:#ccc; text-align: center;">LOGIN</div>						
+                    </a>
+                    <br/><br/>
+                </div>				
+                <ul ng-class="{'fade':$ctrl.toggleMenu}">
+                    <li ng-class="{'active':$ctrl.currentRouteName == 'index.tiles'}"><a ng-click="$ctrl.changeUrl('#/')" href="">Projects</a></li>
+                    <li ng-class="{'active':$ctrl.currentRouteName == 'index.blog'}"><a ng-click="$ctrl.changeUrl('#/blog')" href="">Blog</a></li>
+                    <li ng-class="{'active':$ctrl.currentRouteName == 'index.about'}"><a ng-click="$ctrl.changeUrl('#/about')" href="">Me</a></li>
+                    <li class="hidden-sm hidden-md hidden-lg"><a href="#footer" ng-mouseup="$ctrl.toggleMenu = !$ctrl.toggleMenu" target="_self">Get in touch</a></li>
+                    <li class="social git"><a href="https://github.com/richwincott" target="_blank"><i class="fa fa-github-alt fa-lg" aria-hidden="true"></i></a></li>
+                    <li class="social facebook"><a href="https://www.facebook.com/rich.wincott" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+                    <li class="social linkedin"><a href="https://www.linkedin.com/in/richard-wincott-91040b134" target="_blank"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>                                             
+                </ul>               
+                <div class="hidden-sm hidden-md hidden-lg" style="position:absolute; bottom:25px; width:100%; font-size:12px;">
+                    <br/>
+                    Designed and created<br/> by Richard Wincott<br/>richardwincott.co.uk &copy; 2018
+                    <br/>
+                </div>
+            </nav>               
+        </div>
+    </div>
+
+    <!--<div class="container hidden-xs" >
+        <hr>
+    </div>-->
+</div>
+
+<div class="space"><br/></div>
+
+<div class="container" style="padding:0px;">
+    <div class="row">
+        <div class="col-xs-12 hidden-sm hidden-md hidden-lg" style=" font-size:18px; margin:40px 0px 29px 0px; padding:0px;">
+            <div class="hidden-xs" style="float:right">
+                <a class="btn btn-default my-btn" ng-click="openLoginModal()">
+                    <span ng-if="$ctrl.user.token">Hi, {{$ctrl.user.token.user_display_name}}</span>
+                    <span ng-if="!$ctrl.user.token">Login</span>						
+                </a>
+            </div>                 
+            <!--<div class="col-xs-12" style="text-align:center;">
+                <img class="profile-picture" src="content/img/profile.jpg" />
+            </div>-->
+            <div class="col-xs-12" style="text-align:center; position:relative; top:29px; padding:0px; color:#ccc;">
+                <img ng-click="$ctrl.changeUrl('#/')" src="assets/img/title.png" title="{{$ctrl.title}}" style="cursor:pointer; margin-bottom:7px; filter:brightness(200%); image-rendering:pixelated;" />
+                <br/>
+                <div style="background-color:rgba(0, 0, 0, 0.2); padding:5px 0px;">
+                    Web Developer & Designer
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="row">
+        <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+        <br/>
+        </div>
+        <div class="col-xs-12 hidden-xs">
+            <div id="intro" style="padding:8px 0px; margin:80px 0px -30px 0px; text-align:center; font-size:17px; color:#f1f1f1; line-height:180%; text-shadow:#333 0px 0px 5px;">
+                <span style="font-size:30px; position:relative; top:10px;">"</span> Thank you for taking the time to visit my site. It is my personal profile and portfolio.<br/>  
+                You will find a brief background on me and a wide range of work and personal projects below.<br/>
+                I hope you find what you are looking for and if not something of interest.<br/>  
+                Any questions please get in touch with me via the contact page. Enjoy your stay.
+                <img src="content/img/emoji.png" style="position:relative; top:-2px;" />
+                <span style="font-size:30px; position:relative; top:10px;">"</span>                        
+            </div>
+        </div>
+    </div>-->
+
+    <div class="row">
+        <div class="col-xs-12 hidden-xs" style=" font-size:18px; margin:40px 0px; position:relative; top:-35px;">
+            <div style="float:right; position:relative; top:100px;">
+                <a class="btn btn-default my-btn" ng-click="$ctrl.openLoginModal()">
+                    <span ng-if="$ctrl.user.token">Hi, {{$ctrl.user.token.user_display_name}}</span>
+                    <span ng-if="!$ctrl.user.token">Login</span>						
+                </a>
+            </div>               
+            <!--<div style="display:inline-block; text-align:center;">
+                <img class="profile-picture" src="content/img/profile.jpg" />
+            </div>-->
+            <div style="display:inline-block; position:relative; top:104px;">
+                <img ng-click="$ctrl.changeUrl('#/')" src="assets/img/title.png" title="{{$ctrl.title}}" style="cursor:pointer; margin-bottom:10px; filter:brightness(200%); image-rendering:pixelated; margin-left:-4px;" />
+                <br/>
+                Web Developer & Designer
+            </div>
+        </div>
+    </div>                 
+</div>
+    
+<div class="container-fluid" style="background-color:#f7f7f7; padding:0px;">
+    <div id="projects" class="container">
+        <div class="row">
+            <div class="col-xs-12 no-padding">
+                <div class="state-fade" ui-view></div>
+                <br/>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <!--<div class="row hidden-sm hidden-md hidden-lg">
+        <div class="col-xs-12">
+            <div id="intro" style="padding:8px 0px; margin:80px 0px -110px 0px; text-align:center; font-size:17px; color:#f1f1f1; line-height:180%; text-shadow:#333 0px 0px 5px;">
+                <span style="font-size:30px; position:relative; top:10px;">"</span> Thank you for taking the time to visit my site. It is my personal profile and portfolio.<br/>  
+                You will find a brief background on me and a wide range of work and personal projects above.<br/>
+                I hope you find what you are looking for and if not something of interest.<br/>  
+                Any questions please get in touch with me via the contact page. Enjoy your stay.
+                <img src="content/img/emoji.png" style="position:relative; top:-2px;" />
+                <span style="font-size:30px; position:relative; top:10px;">"</span>                        
+            </div>
+        </div>
+    </div>-->
+
+    <footer id="footer">
+        <div class="row">
+            <div class="col-xs-12">
+                <h4 class="modal-title text-align-center fw-bold mt">Get in touch...</h4>
+                <br/>
+                My Mobile No.: +44 7704 473 460<br>
+                Email: <a href="mailto:rich.wincott@gmail.com">rich.wincott@gmail.com</a><br>
+                <br>
+                . . . or use the form below.
+                <br><br/>
+                <form id="form1" action="send_mail.asp" method="post">
+                    <div class="row">                                       
+                        <div class="col-xs-12 col-sm-8">                                               
+                            <textarea id="textarea2" class="form-control" name="message" rows="6" cols="60" placeholder="Message" required style="resize:none; background-color: #333; border:0px; color:#eee" ></textarea>                                           
+                            <br/>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <input class="form-control" name="name" size="30" type="text" placeholder="Name" style="background-color: #333; border:0px; color:#eee" />
+                            <br/>
+                            <input class="form-control" name="email" size="30" type="text" placeholder="Email" required style="background-color: #333; border:0px; color:#eee" />
+                            <br/>
+                            <button class="btn btn-primary pull-right" onclick="return formValidator();" name="Submit">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="hidden-xs">
+            <br/>
+            Designed and created by Richard Wincott<br/>richardwincott.co.uk &copy; 2018
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+        </div>
+    </footer>
+
+</div>
+
+<div ng-init="$ctrl.loadBannerImage()"></div>
