@@ -3,12 +3,12 @@
     <div class="col-xs-12">
         <center>
             <br/>
-            <div ng-if="$ctrl.post.featured_image" class="post-thumbnail" style="background:url('{{$ctrl.post.featured_image.media_details.sizes.large.source_url}}') no-repeat center center;"></div>
-            <h2>{{$ctrl.post.title.rendered}}</h2>
-            <p>{{$ctrl.post.date | date:"dd.MM.yyyy"}} by <a href="#">{{$ctrl.post.author}}</a></p>
+            <div ng-if="$ctrl.getValue($ctrl.post, 'image')" class="post-thumbnail" style="background:url({{$ctrl.getValue($ctrl.post, 'image')}}) no-repeat center center;"></div>
+            <h2>{{$ctrl.getValue($ctrl.post, 'title')}}</h2>
+            <p>{{$ctrl.getValue($ctrl.post, 'date') | date:"dd.MM.yyyy"}}<!-- by <a href="#">{{$ctrl.post.author}}</a> --></p>
             <br/><br/>
             </center>
-            <div ng-bind-html="$ctrl.post.content.rendered"></div>
+            <div ng-bind-html="$ctrl.getValue($ctrl.post, 'content')"></div>
             <br/><br/>
         </center>
     </div>
