@@ -1,3 +1,41 @@
+<br/><br/><br/><br/>
+
+
+<h1 id="skills" style="font-size: 30px">my skills</h1>
+<br/>
+<table class="table">
+    <tr>
+        <td><img class="icon" src="assets/img/icons/angular.png" />&nbsp;<img class="icon" src="assets/img/icons/typescript.png" /><br/>AngularJS v1.6 with Typescript</td>
+        <td><img class="icon" src="assets/img/icons/react.png" /><br/>React, React Native</td>
+        <td><img class="icon" src="assets/img/icons/webpack.png" />&nbsp;<img class="icon" src="assets/img/icons/gulp.png" /><br/>Webpack, Gulp</td>
+        <td><img class="icon" src="assets/img/icons/karma.png" /><br/>Jasmine, Karma</td>
+    </tr>
+    <tr>
+        <td><img class="icon" src="assets/img/icons/node.png" /><br/>Node.JS, Express, Socket.IO</td>
+        <td><img class="icon" src="assets/img/icons/git.png" />&nbsp;<img class="icon" src="assets/img/icons/npm.png" /><br/>Github, NPM</td>
+        <td><img class="icon" src="assets/img/icons/database.png" /><br/>MongoDB, MySQL</td>
+        <td><img class="icon" src="assets/img/icons/vscode.png" /><br/>Visual Studio Code</td>
+    </tr>
+    <tr>
+        <td><img class="icon" src="assets/img/icons/csharp.png" /><br/>ASP.Net C#</td>
+        <td><img class="icon" src="assets/img/icons/php.png" /><br/>WordPress, PHP</td>
+        <td><img class="icon" src="assets/img/icons/database.png" /><br/>Microsoft SQL Server</td>
+        <td><img class="icon" src="assets/img/icons/conduct.png" />&nbsp;<img class="icon" src="assets/img/icons/cake.png" /><br/>Management, Teamwork, Client Relations</td>
+    </tr>
+</table>
+
+<br/><br/><br/><br/>
+
+
+<h1 id="aboutt" style="font-size: 30px">about me</h1>
+<div ng-include="'aboutModalContent.html'"></div>
+
+
+
+
+
+<h1 id="projectss" style="font-size: 30px">projects</h1>
+<br/>
 <ul class="tiles row">
     <li class="col-xs-6 col-sm-4 col-md-3" ng-click="$ctrl.changeUrl('#/1/' + $index)" ng-repeat="tile in $ctrl.tiles" style="cursor:pointer">
         <div class="thumbnail" style="background: url('{{tile.thumbnail}}') center;">
@@ -19,7 +57,7 @@
     </li>
 </ul>
 <br/>
-<div class="subHeading">Old projects <input class="form-control custom-checkbox" ng-model="$ctrl.tiles2Visible" type="checkbox" /></div>
+<!-- <div class="subHeading">Old projects <input class="form-control custom-checkbox" ng-model="$ctrl.tiles2Visible" type="checkbox" /></div>
 <ul class="tiles row" ng-show="$ctrl.tiles2Visible">
     <li class="col-xs-6 col-sm-4 col-md-3" ng-click="$ctrl.changeUrl('#/2/' + $index)" ng-repeat="tile in $ctrl.tiles2" style="cursor:pointer">
         <div class="thumbnail" style="background: url('{{tile.thumbnail}}') center;">
@@ -37,5 +75,5 @@
             <span style="font-size:10px;">Status: {{tile.status}} | Type: {{tile.type}}</span>
         </div>
     </li>
-</ul>
-<br/>
+</ul> -->
+<br/><br/><br/><br/>
