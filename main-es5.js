@@ -39,7 +39,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"padding\">\n    <div class=\"container\">\n        <br/><br/>\n\n        <div class=\"say-hello\">\n            <a href (click)=\"gotoAnchorTag($event, contact)\">\n                Say hello! <img src=\"../assets/img/wave_large.png\" height=\"22px\" />\n            </a>\n        </div>\n    \n        <div class=\"col-xs-12 welcome-text\">\n            Welcome to my personal website and online portfolio...\n            <hr/>\n        </div>\n    \n        <br/><br/>\n    \n        <h1 #skills id=\"skills\" style=\"font-size: 30px\">my skills</h1>\n        <br/>\n        <div class=\"icons\">\n            <div class=\"row\">\n                <div class=\"col-xs-12 col-sm-6 icon-container\" *ngFor=\"let skill of skils\">\n                    <span *ngFor=\"let icon of skill.icons\"><img class=\"icon\" [src]=\"'../assets/img/icons/' + icon + '.png'\" />&nbsp;</span>\n                    {{skill.text}}\n                </div>\n            </div>\n        </div>\n    \n        <br/><br/>\n    \n        <h1 #about id=\"about\" style=\"font-size: 30px\">about me</h1>\n        <div class=\"row\">\n            <div class=\"col-xs-12\">\n                <div class=\"block-text\">\n                    I am a Software Developer with 6 years commercial experience. I specialise in front-end web applications built with Angular.\n                    <br/><br/>\n                    I'm currently employed by YOPA working as a Javascript Developer. Before that I worked at FortressGB as a Full Stack Developer.\n                    <br/><br/>\n                    I also have a Computer Science Honours Degree. I studied at the University of Hertfordshire and Hertford Regional College in Hatfield/Ware.\n                    <br/><br/>\n                </div>\n            </div>\n        </div>\n    \n        <br/><br/>\n    \n        <h1 #projects id=\"projects\" style=\"font-size: 30px\">projects</h1>\n        <br/>\n        <div class=\"row tiles\">\n            <div class=\"col-xs-6 col-md-6 col-lg-4 col-xl-3 tile\" (click)=\"openTile(i)\" *ngFor=\"let tile of tiles; let i = index;\" style=\"cursor:pointer\">\n                <div class=\"thumbnail\" [ngStyle]=\"{'background-image': 'url(' + tile.thumbnail + ')'}\">\n                    <!-- <div class=\"options btn-group\" ng-click=\"$event.stopPropagation();\" >\n                    <i class=\"fa fa-ellipsis-v fa-lg\" aria-hidden=\"true\"></i>\n                    <ul class=\"dropdown-menu dropdown-menu-right\" uib-dropdown-menu role=\"menu\" aria-labelledby=\"single-button\" style=\"padding-bottom:10px\">\n                        <li role=\"menuitem\"><a ng-click=\"openUrl(tile.url)\">Open in new tab</a></li>\n                        <li ng-if=\"tile.githuburl\" class=\"divider\"></li>\n                        <li ng-if=\"tile.githuburl\" role=\"menuitem\"><a ng-click=\"openUrl(tile.githuburl)\">View on GitHub</a></li>                  \n                        <li class=\"divider\"></li>\n                        <li role=\"menuitem\"><a ng-click=\"remove(1, $index)\">Hide this tile<span style=\"position:absolute; bottom:2px; right:30px; color:red; font-weight:bold; font-size:25px;\">&times;</span></a></li>\n                    </ul>\n                    </div> -->\n                </div>\n                <div class=\"info\">           \n                    <div class=\"title\">{{tile.title}}</div>\n                    <div style=\"font-size:10px; padding: 4px 6px;\">\n                    <span><img src=\"../assets/img/code_tag.png\" height=\"19px\" style=\"position: relative; top: -1px;\" /> {{tile.language}}</span>\n                    <br/>\n                    <span *ngIf=\"tile.githuburl\">&nbsp;&nbsp;&nbsp;<a [href]=\"tile.githuburl\">View on Github</a></span>\n                    </div>\n                </div>\n            </div>\n        </div>\n    \n        <br/><br/>\n    \n        <h1 #contact id=\"contact\" style=\"font-size: 30px\">get in touch</h1>\n        <div class=\"row\">\n            <div class=\"col-xs-12\">\n                <div class=\"block-text\">\n                    Mobile: <span class=\"phone-number\">+44 7704 473 460</span>\n                    <br><br>\n                    Email: <a href=\"mailto:rich.wincott@gmail.com\">rich.wincott@gmail.com</a><br>\n                </div>\n            </div>\n        </div>\n    \n        <br/><br/><br/><br/>\n    </div>\n</div>");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"padding\">\n    <div class=\"container\">\n        <br/><br/>\n\n        <div class=\"say-hello\">\n            <a href (click)=\"gotoAnchorTag($event, contact)\">\n                Say hello! <img src=\"../assets/img/wave_large.png\" height=\"22px\" />\n            </a>\n        </div>\n    \n        <div class=\"col-xs-12 welcome-text\">\n            Welcome to my personal website and online portfolio...\n            <hr/>\n        </div>\n    \n        <br/>\n    \n        <h1 #skills id=\"skills\" style=\"font-size: 30px\">my skills</h1>\n        <br/>\n        <div class=\"icons\">\n            <div class=\"row\">\n                <div class=\"col-xs-12 col-sm-6 icon-container\" *ngFor=\"let skill of skils\">\n                    <span *ngFor=\"let icon of skill.icons\"><img class=\"icon\" [src]=\"'../assets/img/icons/' + icon + '.png'\" />&nbsp;</span>\n                    {{skill.text}}\n                </div>\n            </div>\n        </div>\n    \n        <br/><br/>\n    \n        <h1 #about id=\"about\" style=\"font-size: 30px\">about me</h1>\n        <div class=\"row\">\n            <div class=\"col-xs-12\">\n                <div class=\"block-text\">\n                    I am a Software Developer with 6 years commercial experience. I specialise in front-end web applications built with Angular.\n                    <br/><br/>\n                    I'm currently employed by YOPA working as a Javascript Developer. Before that I worked at FortressGB as a Full Stack Developer.\n                    <br/><br/>\n                    I also have a Computer Science Honours Degree. I studied at the University of Hertfordshire and Hertford Regional College in Hatfield/Ware.\n                    <br/><br/>\n                </div>\n            </div>\n        </div>\n    \n        <br/>\n    \n        <h1 #projects id=\"projects\" style=\"font-size: 30px\">projects</h1>\n        <br/>\n        <div class=\"row tiles\">\n            <div class=\"col-xs-6 col-md-6 col-lg-4 col-xl-3 tile\" (click)=\"openTile(i)\" *ngFor=\"let tile of tiles; let i = index;\" style=\"cursor:pointer\">\n                <div class=\"thumbnail\" [ngStyle]=\"{'background-image': 'url(' + tile.thumbnail + ')'}\">\n                    <!-- <div class=\"options btn-group\" ng-click=\"$event.stopPropagation();\" >\n                    <i class=\"fa fa-ellipsis-v fa-lg\" aria-hidden=\"true\"></i>\n                    <ul class=\"dropdown-menu dropdown-menu-right\" uib-dropdown-menu role=\"menu\" aria-labelledby=\"single-button\" style=\"padding-bottom:10px\">\n                        <li role=\"menuitem\"><a ng-click=\"openUrl(tile.url)\">Open in new tab</a></li>\n                        <li ng-if=\"tile.githuburl\" class=\"divider\"></li>\n                        <li ng-if=\"tile.githuburl\" role=\"menuitem\"><a ng-click=\"openUrl(tile.githuburl)\">View on GitHub</a></li>                  \n                        <li class=\"divider\"></li>\n                        <li role=\"menuitem\"><a ng-click=\"remove(1, $index)\">Hide this tile<span style=\"position:absolute; bottom:2px; right:30px; color:red; font-weight:bold; font-size:25px;\">&times;</span></a></li>\n                    </ul>\n                    </div> -->\n                </div>\n                <div class=\"info\">           \n                    <div class=\"title\">{{tile.title}}</div>\n                    <div style=\"font-size:10px; padding: 4px 6px;\">\n                    <span><img src=\"../assets/img/code_tag.png\" height=\"19px\" style=\"position: relative; top: -1px;\" /> {{tile.language}}</span>\n                    <br/>\n                    <span *ngIf=\"tile.githuburl\">&nbsp;&nbsp;&nbsp;<a [href]=\"tile.githuburl\">View on Github</a></span>\n                    </div>\n                </div>\n            </div>\n        </div>\n    \n        <br/>\n    \n        <h1 #contact id=\"contact\" style=\"font-size: 30px\">get in touch</h1>\n        <div class=\"row\">\n            <div class=\"col-xs-12\">\n                <div class=\"block-text\">\n                    Mobile: <span class=\"phone-number\">+44 7704 473 460</span>\n                    <br><br>\n                    Email: <a href=\"mailto:rich.wincott@gmail.com\">rich.wincott@gmail.com</a><br>\n                </div>\n            </div>\n        </div>\n    \n        <br/><br/><br/><br/>\n    </div>\n</div>");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/project-viewer/project-viewer.component.html": 
@@ -412,8 +412,10 @@
             /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function () { return AppComponent; });
             /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
             /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+            /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
             var AppComponent = /** @class */ (function () {
-                function AppComponent() {
+                function AppComponent(router) {
+                    this.router = router;
                     this.toggleMenu = false;
                 }
                 AppComponent.prototype.ngOnInit = function () {
@@ -422,11 +424,24 @@
                     event.preventDefault();
                     this.toggleMenu = false;
                     var $element = document.querySelector('#' + name);
-                    $element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+                    if (!$element) {
+                        this.router.navigate(['']).then(function () {
+                            setTimeout(function () {
+                                $element = document.querySelector('#' + name);
+                                $element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+                            }, 100);
+                        });
+                    }
+                    else {
+                        $element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+                    }
                     //window.location.href = '/#' + tag;
                 };
                 return AppComponent;
             }());
+            AppComponent.ctorParameters = function () { return [
+                { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }
+            ]; };
             AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
                 Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
                     selector: 'app-root',
@@ -453,6 +468,7 @@
             /* harmony import */ var _components_project_viewer_project_viewer_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/project-viewer/project-viewer.component */ "./src/app/components/project-viewer/project-viewer.component.ts");
             /* harmony import */ var _components_index_index_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/index/index.component */ "./src/app/components/index/index.component.ts");
             /* harmony import */ var _services_tile_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./services/tile.service */ "./src/app/services/tile.service.ts");
+            /* harmony import */ var _services_skill_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./services/skill.service */ "./src/app/services/skill.service.ts");
             var AppModule = /** @class */ (function () {
                 function AppModule() {
                 }
@@ -470,6 +486,7 @@
                         _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"]
                     ],
                     providers: [
+                        _services_skill_service__WEBPACK_IMPORTED_MODULE_8__["SkillService"],
                         _services_tile_service__WEBPACK_IMPORTED_MODULE_7__["TileService"]
                     ],
                     bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
@@ -501,10 +518,12 @@
             /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
             /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
             /* harmony import */ var src_app_services_tile_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/services/tile.service */ "./src/app/services/tile.service.ts");
+            /* harmony import */ var src_app_services_skill_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/services/skill.service */ "./src/app/services/skill.service.ts");
             var IndexComponent = /** @class */ (function () {
-                function IndexComponent(router, tileService) {
+                function IndexComponent(router, tileService, skillService) {
                     this.router = router;
                     this.tileService = tileService;
+                    this.skillService = skillService;
                 }
                 Object.defineProperty(IndexComponent.prototype, "tiles", {
                     get: function () {
@@ -513,7 +532,111 @@
                     enumerable: true,
                     configurable: true
                 });
+                Object.defineProperty(IndexComponent.prototype, "skils", {
+                    get: function () {
+                        return this.skillService.skils;
+                    },
+                    enumerable: true,
+                    configurable: true
+                });
                 IndexComponent.prototype.ngOnInit = function () {
+                };
+                IndexComponent.prototype.openTile = function (index) {
+                    //window.open(tile.url, '_blank');
+                    this.router.navigate(['/viewer', index]);
+                };
+                IndexComponent.prototype.gotoAnchorTag = function (event, $element) {
+                    event.preventDefault();
+                    $element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+                    //window.location.href = '/#' + tag;
+                };
+                return IndexComponent;
+            }());
+            IndexComponent.ctorParameters = function () { return [
+                { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] },
+                { type: src_app_services_tile_service__WEBPACK_IMPORTED_MODULE_3__["TileService"] },
+                { type: src_app_services_skill_service__WEBPACK_IMPORTED_MODULE_4__["SkillService"] }
+            ]; };
+            IndexComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+                    selector: 'app-index',
+                    template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./index.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/index/index.component.html")).default,
+                    styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./index.component.scss */ "./src/app/components/index/index.component.scss")).default]
+                })
+            ], IndexComponent);
+            /***/ 
+        }),
+        /***/ "./src/app/components/project-viewer/project-viewer.component.scss": 
+        /*!*************************************************************************!*\
+          !*** ./src/app/components/project-viewer/project-viewer.component.scss ***!
+          \*************************************************************************/
+        /*! exports provided: default */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony default export */ __webpack_exports__["default"] = ("button {\n  position: absolute;\n  top: 32px;\n  left: -106px;\n  z-index: 100;\n}\n@media (max-width: 767px) {\n  button {\n    display: none;\n  }\n}\niframe {\n  display: block;\n  height: 100vh;\n  width: 100%;\n  background: url('loading.gif') center center no-repeat;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wcm9qZWN0LXZpZXdlci9jOlxcUHJvamVjdHNcXHJpY2hhcmR3aW5jb3R0LmNvLnVrL3NyY1xcYXBwXFxjb21wb25lbnRzXFxwcm9qZWN0LXZpZXdlclxccHJvamVjdC12aWV3ZXIuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2NvbXBvbmVudHMvcHJvamVjdC12aWV3ZXIvcHJvamVjdC12aWV3ZXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFLSSxrQkFBQTtFQUNBLFNBQUE7RUFDQSxZQUFBO0VBQ0EsWUFBQTtBQ0hKO0FESkk7RUFESjtJQUVRLGFBQUE7RUNPTjtBQUNGO0FEQ0E7RUFDSSxjQUFBO0VBQ0EsYUFBQTtFQUNBLFdBQUE7RUFDQSxzREFBQTtBQ0VKIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9wcm9qZWN0LXZpZXdlci9wcm9qZWN0LXZpZXdlci5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbImJ1dHRvbiB7XHJcbiAgICBAbWVkaWEgKG1heC13aWR0aDogNzY3cHgpIHtcclxuICAgICAgICBkaXNwbGF5OiBub25lO1xyXG4gICAgfVxyXG5cclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIHRvcDogMzJweDtcclxuICAgIGxlZnQ6IC0xMDZweDtcclxuICAgIHotaW5kZXg6IDEwMDtcclxufVxyXG5cclxuaWZyYW1lIHtcclxuICAgIGRpc3BsYXk6IGJsb2NrO1xyXG4gICAgaGVpZ2h0OiAxMDB2aDtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgYmFja2dyb3VuZDogdXJsKCcuLi8uLi8uLi9hc3NldHMvaW1nL2xvYWRpbmcuZ2lmJykgY2VudGVyIGNlbnRlciBuby1yZXBlYXQ7XHJcbn0iLCJidXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogMzJweDtcbiAgbGVmdDogLTEwNnB4O1xuICB6LWluZGV4OiAxMDA7XG59XG5AbWVkaWEgKG1heC13aWR0aDogNzY3cHgpIHtcbiAgYnV0dG9uIHtcbiAgICBkaXNwbGF5OiBub25lO1xuICB9XG59XG5cbmlmcmFtZSB7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICBoZWlnaHQ6IDEwMHZoO1xuICB3aWR0aDogMTAwJTtcbiAgYmFja2dyb3VuZDogdXJsKFwiLi4vLi4vLi4vYXNzZXRzL2ltZy9sb2FkaW5nLmdpZlwiKSBjZW50ZXIgY2VudGVyIG5vLXJlcGVhdDtcbn0iXX0= */");
+            /***/ 
+        }),
+        /***/ "./src/app/components/project-viewer/project-viewer.component.ts": 
+        /*!***********************************************************************!*\
+          !*** ./src/app/components/project-viewer/project-viewer.component.ts ***!
+          \***********************************************************************/
+        /*! exports provided: ProjectViewerComponent */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProjectViewerComponent", function () { return ProjectViewerComponent; });
+            /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+            /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+            /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+            /* harmony import */ var src_app_services_tile_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/services/tile.service */ "./src/app/services/tile.service.ts");
+            /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm2015/platform-browser.js");
+            var ProjectViewerComponent = /** @class */ (function () {
+                function ProjectViewerComponent(route, tileService, sanitizer) {
+                    this.route = route;
+                    this.tileService = tileService;
+                    this.sanitizer = sanitizer;
+                }
+                Object.defineProperty(ProjectViewerComponent.prototype, "tiles", {
+                    get: function () {
+                        return this.tileService.tiles;
+                    },
+                    enumerable: true,
+                    configurable: true
+                });
+                ProjectViewerComponent.prototype.ngOnInit = function () {
+                    var id = this.route.snapshot.paramMap.get('id');
+                    this.tile = this.tiles[id];
+                };
+                return ProjectViewerComponent;
+            }());
+            ProjectViewerComponent.ctorParameters = function () { return [
+                { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] },
+                { type: src_app_services_tile_service__WEBPACK_IMPORTED_MODULE_3__["TileService"] },
+                { type: _angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__["DomSanitizer"] }
+            ]; };
+            ProjectViewerComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+                    selector: 'app-project-viewer',
+                    template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./project-viewer.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/project-viewer/project-viewer.component.html")).default,
+                    styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./project-viewer.component.scss */ "./src/app/components/project-viewer/project-viewer.component.scss")).default]
+                })
+            ], ProjectViewerComponent);
+            /***/ 
+        }),
+        /***/ "./src/app/services/skill.service.ts": 
+        /*!*******************************************!*\
+          !*** ./src/app/services/skill.service.ts ***!
+          \*******************************************/
+        /*! exports provided: SkillService */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SkillService", function () { return SkillService; });
+            /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+            /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+            var SkillService = /** @class */ (function () {
+                function SkillService() {
                     this.skils = [
                         {
                             text: 'Angular, Typescript',
@@ -592,87 +715,14 @@
                             ]
                         }
                     ];
-                };
-                IndexComponent.prototype.openTile = function (index) {
-                    //window.open(tile.url, '_blank');
-                    this.router.navigate(['/viewer', index]);
-                };
-                IndexComponent.prototype.gotoAnchorTag = function (event, $element) {
-                    event.preventDefault();
-                    $element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
-                    //window.location.href = '/#' + tag;
-                };
-                return IndexComponent;
-            }());
-            IndexComponent.ctorParameters = function () { return [
-                { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] },
-                { type: src_app_services_tile_service__WEBPACK_IMPORTED_MODULE_3__["TileService"] }
-            ]; };
-            IndexComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-                Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-                    selector: 'app-index',
-                    template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./index.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/index/index.component.html")).default,
-                    styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./index.component.scss */ "./src/app/components/index/index.component.scss")).default]
-                })
-            ], IndexComponent);
-            /***/ 
-        }),
-        /***/ "./src/app/components/project-viewer/project-viewer.component.scss": 
-        /*!*************************************************************************!*\
-          !*** ./src/app/components/project-viewer/project-viewer.component.scss ***!
-          \*************************************************************************/
-        /*! exports provided: default */
-        /***/ (function (module, __webpack_exports__, __webpack_require__) {
-            "use strict";
-            __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("button {\n  position: absolute;\n  top: 32px;\n  left: -106px;\n  z-index: 100;\n}\n@media (max-width: 767px) {\n  button {\n    display: none;\n  }\n}\niframe {\n  display: block;\n  height: 100vh;\n  width: 100%;\n  background: url('loading.gif') center center no-repeat;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wcm9qZWN0LXZpZXdlci9jOlxcUHJvamVjdHNcXHJpY2hhcmR3aW5jb3R0LmNvLnVrL3NyY1xcYXBwXFxjb21wb25lbnRzXFxwcm9qZWN0LXZpZXdlclxccHJvamVjdC12aWV3ZXIuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2NvbXBvbmVudHMvcHJvamVjdC12aWV3ZXIvcHJvamVjdC12aWV3ZXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFLSSxrQkFBQTtFQUNBLFNBQUE7RUFDQSxZQUFBO0VBQ0EsWUFBQTtBQ0hKO0FESkk7RUFESjtJQUVRLGFBQUE7RUNPTjtBQUNGO0FEQ0E7RUFDSSxjQUFBO0VBQ0EsYUFBQTtFQUNBLFdBQUE7RUFDQSxzREFBQTtBQ0VKIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9wcm9qZWN0LXZpZXdlci9wcm9qZWN0LXZpZXdlci5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbImJ1dHRvbiB7XHJcbiAgICBAbWVkaWEgKG1heC13aWR0aDogNzY3cHgpIHtcclxuICAgICAgICBkaXNwbGF5OiBub25lO1xyXG4gICAgfVxyXG5cclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIHRvcDogMzJweDtcclxuICAgIGxlZnQ6IC0xMDZweDtcclxuICAgIHotaW5kZXg6IDEwMDtcclxufVxyXG5cclxuaWZyYW1lIHtcclxuICAgIGRpc3BsYXk6IGJsb2NrO1xyXG4gICAgaGVpZ2h0OiAxMDB2aDtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgYmFja2dyb3VuZDogdXJsKCcuLi8uLi8uLi9hc3NldHMvaW1nL2xvYWRpbmcuZ2lmJykgY2VudGVyIGNlbnRlciBuby1yZXBlYXQ7XHJcbn0iLCJidXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogMzJweDtcbiAgbGVmdDogLTEwNnB4O1xuICB6LWluZGV4OiAxMDA7XG59XG5AbWVkaWEgKG1heC13aWR0aDogNzY3cHgpIHtcbiAgYnV0dG9uIHtcbiAgICBkaXNwbGF5OiBub25lO1xuICB9XG59XG5cbmlmcmFtZSB7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICBoZWlnaHQ6IDEwMHZoO1xuICB3aWR0aDogMTAwJTtcbiAgYmFja2dyb3VuZDogdXJsKFwiLi4vLi4vLi4vYXNzZXRzL2ltZy9sb2FkaW5nLmdpZlwiKSBjZW50ZXIgY2VudGVyIG5vLXJlcGVhdDtcbn0iXX0= */");
-            /***/ 
-        }),
-        /***/ "./src/app/components/project-viewer/project-viewer.component.ts": 
-        /*!***********************************************************************!*\
-          !*** ./src/app/components/project-viewer/project-viewer.component.ts ***!
-          \***********************************************************************/
-        /*! exports provided: ProjectViewerComponent */
-        /***/ (function (module, __webpack_exports__, __webpack_require__) {
-            "use strict";
-            __webpack_require__.r(__webpack_exports__);
-            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProjectViewerComponent", function () { return ProjectViewerComponent; });
-            /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-            /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-            /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
-            /* harmony import */ var src_app_services_tile_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/services/tile.service */ "./src/app/services/tile.service.ts");
-            /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm2015/platform-browser.js");
-            var ProjectViewerComponent = /** @class */ (function () {
-                function ProjectViewerComponent(route, tileService, sanitizer) {
-                    this.route = route;
-                    this.tileService = tileService;
-                    this.sanitizer = sanitizer;
                 }
-                Object.defineProperty(ProjectViewerComponent.prototype, "tiles", {
-                    get: function () {
-                        return this.tileService.tiles;
-                    },
-                    enumerable: true,
-                    configurable: true
-                });
-                ProjectViewerComponent.prototype.ngOnInit = function () {
-                    var id = this.route.snapshot.paramMap.get('id');
-                    this.tile = this.tiles[id];
-                };
-                return ProjectViewerComponent;
+                return SkillService;
             }());
-            ProjectViewerComponent.ctorParameters = function () { return [
-                { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] },
-                { type: src_app_services_tile_service__WEBPACK_IMPORTED_MODULE_3__["TileService"] },
-                { type: _angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__["DomSanitizer"] }
-            ]; };
-            ProjectViewerComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-                Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-                    selector: 'app-project-viewer',
-                    template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./project-viewer.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/project-viewer/project-viewer.component.html")).default,
-                    styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./project-viewer.component.scss */ "./src/app/components/project-viewer/project-viewer.component.scss")).default]
+            SkillService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+                    providedIn: 'root'
                 })
-            ], ProjectViewerComponent);
+            ], SkillService);
             /***/ 
         }),
         /***/ "./src/app/services/tile.service.ts": 
