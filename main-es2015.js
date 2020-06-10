@@ -747,13 +747,13 @@ let TileService = class TileService {
                 title: "Chat",
                 thumbnail: "../assets/img/mw25.jpg",
                 language: "Angular",
-                url: "http://dev.richardwincott.co.uk:8181"
+                url: "http://dev.richardwincott.co.uk/chat"
             },
             {
                 title: "Spikes",
                 thumbnail: "../assets/img/mw24.jpg",
                 language: "p5.js, Node, Socket.io",
-                url: "http://dev.richardwincott.co.uk:8282",
+                url: "http://dev.richardwincott.co.uk/spikes",
                 githuburl: "https://github.com/richwincott/spikes"
             },
             {
