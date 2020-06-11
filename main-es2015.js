@@ -736,6 +736,13 @@ let TileService = class TileService {
     constructor() {
         this.tiles = [
             {
+                title: "Slime Football",
+                thumbnail: "../assets/img/mw28.jpg",
+                language: "p5.js, Socket.io",
+                url: "https://dev.richardwincott.co.uk/slime",
+                githuburl: "https://github.com/richwincott/slime"
+            },
+            {
                 title: "Emoji Jump",
                 thumbnail: "../assets/img/mw27.jpg",
                 language: "p5.js, Node, Socket.io",
@@ -751,7 +758,7 @@ let TileService = class TileService {
             {
                 title: "Chat",
                 thumbnail: "../assets/img/mw25.jpg",
-                language: "Angular",
+                language: "Angular, Socket.io",
                 url: "https://dev.richardwincott.co.uk/chat"
             },
             {
