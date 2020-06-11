@@ -555,8 +555,13 @@
                 IndexComponent.prototype.ngOnInit = function () {
                 };
                 IndexComponent.prototype.openTile = function (index) {
-                    //window.open(tile.url, '_blank');
-                    this.router.navigate(['/viewer', index]);
+                    var tile = this.tiles[index];
+                    if (tile.url.indexOf("https:") > -1) {
+                        this.router.navigate(['/viewer', index]);
+                    }
+                    else {
+                        window.open(tile.url, '_blank');
+                    }
                 };
                 IndexComponent.prototype.gotoAnchorTag = function (event, $element) {
                     event.preventDefault();
@@ -762,27 +767,27 @@
                             title: "USBMusic",
                             thumbnail: "../assets/img/mw26.jpg",
                             language: "React, Spotify Api",
-                            url: "http://dev.richardwincott.co.uk/usbmusic",
+                            url: "https://dev.richardwincott.co.uk/usbmusic",
                             githuburl: "https://github.com/richwincott/usbmusic"
                         },
                         {
                             title: "Chat",
                             thumbnail: "../assets/img/mw25.jpg",
                             language: "Angular",
-                            url: "http://dev.richardwincott.co.uk/chat"
+                            url: "https://dev.richardwincott.co.uk/chat"
                         },
                         {
                             title: "Spikes",
                             thumbnail: "../assets/img/mw24.jpg",
                             language: "p5.js, Node, Socket.io",
-                            url: "http://dev.richardwincott.co.uk/spikes",
+                            url: "https://dev.richardwincott.co.uk/spikes",
                             githuburl: "https://github.com/richwincott/spikes"
                         },
                         {
                             title: "Mario",
                             thumbnail: "../assets/img/mw23.jpg",
                             language: "Canvas, ES6",
-                            url: "http://dev.richardwincott.co.uk/mario",
+                            url: "https://dev.richardwincott.co.uk/mario",
                             githuburl: "https://github.com/richwincott/mario"
                         },
                         {
