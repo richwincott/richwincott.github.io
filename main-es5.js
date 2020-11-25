@@ -28,7 +28,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<!-- [ngStyle]=\"{'background-position-x': '-' + 242 - (scrollTop/80) + 'px'}\" -->\n<section class=\"sidebar\">\n\t<div class=\"padding\">\n\t\t<div class=\"toggle\" [ngClass]=\"{'expand': toggleMenu}\" (click)=\"toggleMenu=!toggleMenu\">\n\t\t\t<ul class=\"hamburger list-unstyled\" [ngClass]=\"{'open': toggleMenu}\">\n\t\t\t\t<li></li>\n\t\t\t\t<li></li>\n\t\t\t\t<li></li>\n\t\t\t\t<li></li>\n\t\t\t</ul>\n\t\t</div>\n\t\n\t\t<!-- <div class=\"rocket\">\n\t\t\tR <img src=\"../assets/img/rocket_large.png\" height=\"40px\" alt=\"\"> C H\n\t\t</div> -->\n\n\t\t<div style=\"width: 300px; margin: 0px auto;\">\n\t\t\t<div class=\"container-fluid\">\n\t\t\t\t<div class=\"row\">\n\t\t\t\t\t<div class=\"col-xs-4\">\n\t\t\t\t\t\t<img class=\"profile-picture\" src=\"../assets/img/profile.jpg\" />\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"col-xs-8\">\n\t\t\t\t\t\t<h1>Richard<br/>Wincott</h1>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\n\t\t<!-- <p>Hi there, I'm</p> -->\n\t\t<p class=\"tagline\">Experienced Front-end Web developer specialising in <!-- <br/> -->Angular and Javascript applications.</p>\n\t\n\t\t<nav [ngClass]=\"{'show': toggleMenu}\">\n\t\n\t\t\t<!-- <div class=\"rocket d-md-none\">\n\t\t\t\tR <img src=\"../assets/img/rocket_large.png\" height=\"40px\" alt=\"\"> C H\n\t\t\t</div> -->\n\t\n\t\t\t<ul class=\"list-unstyled nav-item-container\">\n\t\t\t\t<li *ngFor=\"let item of navItems\" class=\"nav-item\">\n\t\t\t\t\t<a href [ngClass]=\"{'active': item.active}\" (click)=\"gotoAnchorTag($event, item.anchor)\">{{item.label}}</a>\n\t\t\t\t</li>\n\t\t\t</ul>\n\t\n\t\t\t<div class=\"footer\">\n\t\t\t\t<ul class=\"list-unstyled\">\n\t\t\t\t\t<li class=\"social git\">\n\t\t\t\t\t\t<a href=\"https://github.com/richwincott\" target=\"_blank\"><i class=\"fa fa-github-alt fa-lg\" aria-hidden=\"true\"></i></a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"social facebook\">\n\t\t\t\t\t\t<a href=\"https://www.facebook.com/rich.wincott\" target=\"_blank\"><i class=\"fa fa-facebook fa-lg\" aria-hidden=\"true\"></i></a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"social linkedin\">\n\t\t\t\t\t\t<a href=\"https://www.linkedin.com/in/richard-wincott-91040b134\" target=\"_blank\"><i class=\"fa fa-linkedin fa-lg\" aria-hidden=\"true\"></i></a>\n\t\t\t\t\t</li> \n\t\t\t\t</ul>\n\t\n\t\t\t\t<br/>\n\t\n\t\t\t\t<!-- Designed and created by Richard Wincott<br/> -->\n\t\t\t\trichardwincott.co.uk &copy; {{currentYear}} \n\t\t\t</div>\n\t\t</nav>  \n\t</div>\n</section>\n\n<section class=\"content\">\n\t<router-outlet></router-outlet>\n</section>");
+            /* harmony default export */ __webpack_exports__["default"] = ("<!-- [ngStyle]=\"{'background-position-x': '-' + 242 - (scrollTop/80) + 'px'}\" -->\n<section class=\"sidebar\">\n  <div class=\"padding\">\n    <div class=\"toggle\" [ngClass]=\"{'expand': toggleMenu}\" (click)=\"toggleMenu=!toggleMenu\">\n      <ul class=\"hamburger list-unstyled\" [ngClass]=\"{'open': toggleMenu}\">\n        <li></li>\n        <li></li>\n        <li></li>\n        <li></li>\n      </ul>\n    </div>\n\n    <!-- <div class=\"rocket\">\n\t\t\tR <img src=\"../assets/img/rocket_large.png\" height=\"40px\" alt=\"\"> C H\n\t\t</div> -->\n\n    <div style=\"width: 300px; margin: 0px auto;\">\n      <div class=\"container-fluid\">\n        <div class=\"row\">\n          <div class=\"col-xs-4\">\n            <img class=\"profile-picture\" src=\"../assets/img/profile.jpg\" />\n          </div>\n          <div class=\"col-xs-8\">\n            <h1 [innerHTML]=\"data.title\"></h1>\n          </div>\n        </div>\n      </div>\n    </div>\n\n    <!-- <p>Hi there, I'm</p> -->\n    <p class=\"tagline\">{{data.subtitle}}</p>\n\n    <nav [ngClass]=\"{'show': toggleMenu}\">\n\n      <!-- <div class=\"rocket d-md-none\">\n\t\t\t\tR <img src=\"../assets/img/rocket_large.png\" height=\"40px\" alt=\"\"> C H\n\t\t\t</div> -->\n\n      <ul class=\"list-unstyled nav-item-container\">\n        <li *ngFor=\"let item of navItems\" class=\"nav-item\">\n          <a href [ngClass]=\"{'active': item.active}\" (click)=\"gotoAnchorTag($event, item.anchor)\">{{item.label}}</a>\n        </li>\n      </ul>\n\n      <div class=\"footer\">\n        <ul class=\"list-unstyled\">\n          <li class=\"social git\">\n            <a href=\"https://github.com/richwincott\" target=\"_blank\"><i class=\"fa fa-github-alt fa-lg\" aria-hidden=\"true\"></i></a>\n          </li>\n          <li class=\"social facebook\">\n            <a href=\"https://www.facebook.com/rich.wincott\" target=\"_blank\"><i class=\"fa fa-facebook fa-lg\" aria-hidden=\"true\"></i></a>\n          </li>\n          <li class=\"social linkedin\">\n            <a href=\"https://www.linkedin.com/in/richard-wincott-91040b134\" target=\"_blank\"><i class=\"fa fa-linkedin fa-lg\" aria-hidden=\"true\"></i></a>\n          </li>\n        </ul>\n\n        <br />\n\n        <!-- Designed and created by Richard Wincott<br/> -->\n        richardwincott.co.uk &copy; {{currentYear}}\n      </div>\n    </nav>\n  </div>\n</section>\n\n<section class=\"content\">\n  <router-outlet></router-outlet>\n</section>");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/index/index.component.html": 
@@ -39,7 +39,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"padding\" style=\"background-color: white;\">\r\n    <div class=\"\">\r\n        <br/><br/>\r\n\r\n        <!-- <div class=\"say-hello\">\r\n            <a href (click)=\"gotoAnchorTag($event, contact)\">\r\n                Say hello! <img src=\"../assets/img/wave_large.png\" height=\"22px\" />\r\n            </a>\r\n        </div> -->\r\n    \r\n        <div class=\"welcome-text\">\r\n            Welcome to my personal website and online portfolio...\r\n            <hr/>\r\n        </div>\r\n    \r\n        <br/>\r\n    \r\n        <h1 #skills id=\"skills\" style=\"font-size: 30px\">my tools</h1>\r\n        <br/>\r\n        <div class=\"icons\">\r\n            <div class=\"container-fluid\">\r\n                <div class=\"row\">\r\n                    <div class=\"col-xs-12 col-sm-6 icon-container\" *ngFor=\"let skill of skils\">\r\n                        <div class=\"icon-container-innner\">\r\n                            <span *ngFor=\"let icon of skill.icons\"><img class=\"icon\" [src]=\"'../assets/img/icons/' + icon + '.png'\" />&nbsp;</span>\r\n                            {{skill.text}}\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    \r\n        <br/><br/>\r\n    \r\n        <h1 #about id=\"about\" style=\"font-size: 30px\">about me</h1>\r\n        <div class=\"block-text\">\r\n            Web developer with 5 years commercial experience. Specialising in front-end applications built with Angular.\r\n            <br/><br/>\r\n            Currently employed by Foster + Partners, working as an Applications Developer.\r\n            <br/><br/>\r\n            Previously worked at YOPA as a Javascript developer and before that worked at FortressGB as a Full Stack developer.\r\n            <br/><br/>\r\n            Bachelor of Computer Science, 2nd Class Honours Degree. Studied at the University of Hertfordshire and Hertford Regional College.\r\n            <br/><br/>\r\n        </div>\r\n    \r\n        <br/>\r\n    \r\n        <h1 #projects id=\"projects\" style=\"font-size: 30px\">projects</h1>\r\n        <br/>\r\n        <div class=\"tiles\">\r\n            <div class=\"container-fluid\">\r\n                <div class=\"row text-center\" style=\"width: auto;\">\r\n                    <div class=\"col-xs-6 col-md-6 col-lg-4 col-xl-3 tile\" (click)=\"openTile(i)\" *ngFor=\"let tile of tiles; let i = index;\" style=\"cursor:pointer\">\r\n                        <div class=\"project-container-inner\">\r\n                            <div class=\"thumbnail\" [ngStyle]=\"{'background-image': 'url(' + tile.thumbnail + ')'}\">\r\n                                <!-- <div class=\"options btn-group\" ng-click=\"$event.stopPropagation();\" >\r\n                                <i class=\"fa fa-ellipsis-v fa-lg\" aria-hidden=\"true\"></i>\r\n                                <ul class=\"dropdown-menu dropdown-menu-right\" uib-dropdown-menu role=\"menu\" aria-labelledby=\"single-button\" style=\"padding-bottom:10px\">\r\n                                    <li role=\"menuitem\"><a ng-click=\"openUrl(tile.url)\">Open in new tab</a></li>\r\n                                    <li ng-if=\"tile.githuburl\" class=\"divider\"></li>\r\n                                    <li ng-if=\"tile.githuburl\" role=\"menuitem\"><a ng-click=\"openUrl(tile.githuburl)\">View on GitHub</a></li>                  \r\n                                    <li class=\"divider\"></li>\r\n                                    <li role=\"menuitem\"><a ng-click=\"remove(1, $index)\">Hide this tile<span style=\"position:absolute; bottom:2px; right:30px; color:red; font-weight:bold; font-size:25px;\">&times;</span></a></li>\r\n                                </ul>\r\n                                </div> -->\r\n                            </div>\r\n                            <div class=\"info\">           \r\n                                <div class=\"title\">{{tile.title}}</div>\r\n                                <div style=\"font-size:10px; padding: 4px 3px;\">\r\n                                    <span><img src=\"../assets/img/code_tag.png\" height=\"12px\" style=\"position: relative; top: -1px;\" /> {{tile.language}}</span>\r\n                                    <br/>\r\n                                    <span *ngIf=\"tile.githuburl\"><a [href]=\"tile.githuburl\">View on Github</a></span>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    \r\n        <br/>\r\n    \r\n        <h1 #contact id=\"contact\" style=\"font-size: 30px\">get in touch</h1>\r\n        <div class=\"block-text\">\r\n            Mobile: <span class=\"phone-number\">+44 7704 473 460</span>\r\n            <br><br>\r\n            Email: <a href=\"mailto:rich.wincott@gmail.com\">rich.wincott@gmail.com</a><br>\r\n        </div>\r\n    \r\n        <br/><br/><br/><br/>\r\n    </div>\r\n</div>");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"padding\" style=\"background-color: white;\">\r\n  <div class=\"\">\r\n    <br /><br />\r\n\r\n    <!-- <div class=\"say-hello\">\r\n            <a href (click)=\"gotoAnchorTag($event, contact)\">\r\n                Say hello! <img src=\"../assets/img/wave_large.png\" height=\"22px\" />\r\n            </a>\r\n        </div> -->\r\n\r\n    <div class=\"welcome-text\">\r\n      {{data.header}}\r\n      <hr />\r\n    </div>\r\n\r\n    <br />\r\n\r\n    <h1 #skills id=\"skills\" style=\"font-size: 30px\">{{this.dataSectionNameByIndex(0)}}</h1>\r\n    <br />\r\n    <div class=\"icons\">\r\n      <div class=\"container-fluid\">\r\n        <div class=\"row\">\r\n          <div class=\"col-xs-12 col-sm-6 icon-container\" *ngFor=\"let skill of skils\">\r\n            <div class=\"icon-container-innner\">\r\n              <span *ngFor=\"let icon of skill.icons\"><img class=\"icon\" [src]=\"'../assets/img/icons/' + icon + '.png'\" />&nbsp;</span>\r\n              {{skill.text}}\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n\r\n    <br /><br />\r\n\r\n    <h1 #about id=\"about\" style=\"font-size: 30px\">{{this.dataSectionNameByIndex(1)}}</h1>\r\n    <div class=\"block-text\" [innerHTML]=\"data.sections[this.dataSectionNameByIndex(1)]\"></div>\r\n\r\n    <br />\r\n\r\n    <h1 #projects id=\"projects\" style=\"font-size: 30px\">{{this.dataSectionNameByIndex(2)}}</h1>\r\n    <br />\r\n    <div class=\"tiles\">\r\n      <div class=\"container-fluid\">\r\n        <div class=\"row text-center\" style=\"width: auto;\">\r\n          <div class=\"col-xs-6 col-md-6 col-lg-4 col-xl-3 tile\" (click)=\"openTile(i)\" *ngFor=\"let tile of tiles; let i = index;\" style=\"cursor:pointer\">\r\n            <div class=\"project-container-inner\">\r\n              <div class=\"thumbnail\" [ngStyle]=\"{'background-image': 'url(' + tile.thumbnail + ')'}\">\r\n                <!-- <div class=\"options btn-group\" ng-click=\"$event.stopPropagation();\" >\r\n                                <i class=\"fa fa-ellipsis-v fa-lg\" aria-hidden=\"true\"></i>\r\n                                <ul class=\"dropdown-menu dropdown-menu-right\" uib-dropdown-menu role=\"menu\" aria-labelledby=\"single-button\" style=\"padding-bottom:10px\">\r\n                                    <li role=\"menuitem\"><a ng-click=\"openUrl(tile.url)\">Open in new tab</a></li>\r\n                                    <li ng-if=\"tile.githuburl\" class=\"divider\"></li>\r\n                                    <li ng-if=\"tile.githuburl\" role=\"menuitem\"><a ng-click=\"openUrl(tile.githuburl)\">View on GitHub</a></li>                  \r\n                                    <li class=\"divider\"></li>\r\n                                    <li role=\"menuitem\"><a ng-click=\"remove(1, $index)\">Hide this tile<span style=\"position:absolute; bottom:2px; right:30px; color:red; font-weight:bold; font-size:25px;\">&times;</span></a></li>\r\n                                </ul>\r\n                                </div> -->\r\n              </div>\r\n              <div class=\"info\">\r\n                <div class=\"title\">{{tile.title}}</div>\r\n                <div style=\"font-size:10px; padding: 4px 3px;\">\r\n                  <span><img src=\"../assets/img/code_tag.png\" height=\"12px\" style=\"position: relative; top: -1px;\" /> {{tile.language}}</span>\r\n                  <br />\r\n                  <span *ngIf=\"tile.githuburl\"><a [href]=\"tile.githuburl\">View on Github</a></span>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n\r\n    <br />\r\n\r\n    <h1 #contact id=\"contact\" style=\"font-size: 30px\">{{this.dataSectionNameByIndex(3)}}</h1>\r\n    <div class=\"block-text\">\r\n      Mobile: <span class=\"phone-number\">{{data.sections[this.dataSectionNameByIndex(3)].mobile}}</span>\r\n      <br><br>\r\n      Email: <a href=\"mailto:{{data.sections[this.dataSectionNameByIndex(3)].email}}\">{{data.sections[this.dataSectionNameByIndex(3)].email}}</a><br>\r\n    </div>\r\n\r\n    <br /><br /><br /><br />\r\n  </div>\r\n</div>");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/page-not-found/page-not-found.component.html": 
@@ -61,7 +61,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<button [routerLink]=\"['']\" class=\"btn btn-dark\">Back</button>\n<iframe #iframe [src]=\"sanitizer.bypassSecurityTrustResourceUrl(tile.url)\" frameborder=\"0\"></iframe>");
+            /* harmony default export */ __webpack_exports__["default"] = ("<button [routerLink]=\"['']\" class=\"btn btn-dark\">Back</button>\r\n<iframe #iframe [src]=\"sanitizer.bypassSecurityTrustResourceUrl(tile.url)\" frameborder=\"0\"></iframe>");
             /***/ 
         }),
         /***/ "./node_modules/tslib/tslib.es6.js": 
@@ -426,6 +426,7 @@
             /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
             /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
             /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+            var data = __webpack_require__(/*! ../assets/data.json */ "./src/assets/data.json");
             var AppComponent = /** @class */ (function () {
                 function AppComponent(router) {
                     this.router = router;
@@ -458,6 +459,13 @@
                         }
                     ];
                 }
+                Object.defineProperty(AppComponent.prototype, "data", {
+                    get: function () {
+                        return data;
+                    },
+                    enumerable: true,
+                    configurable: true
+                });
                 AppComponent.prototype.ngOnInit = function () {
                     var _this = this;
                     this.currentYear = new Date().getFullYear().toString();
@@ -591,6 +599,7 @@
             /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
             /* harmony import */ var src_app_services_tile_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/services/tile.service */ "./src/app/services/tile.service.ts");
             /* harmony import */ var src_app_services_skill_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/services/skill.service */ "./src/app/services/skill.service.ts");
+            var data = __webpack_require__(/*! ../../../assets/data.json */ "./src/assets/data.json");
             var IndexComponent = /** @class */ (function () {
                 function IndexComponent(router, tileService, skillService) {
                     this.router = router;
@@ -611,7 +620,17 @@
                     enumerable: true,
                     configurable: true
                 });
+                Object.defineProperty(IndexComponent.prototype, "data", {
+                    get: function () {
+                        return data;
+                    },
+                    enumerable: true,
+                    configurable: true
+                });
                 IndexComponent.prototype.ngOnInit = function () {
+                };
+                IndexComponent.prototype.dataSectionNameByIndex = function (index) {
+                    return Object.keys(data.sections)[index];
                 };
                 IndexComponent.prototype.openTile = function (index) {
                     var tile = this.tiles[index];
@@ -750,87 +769,14 @@
             /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SkillService", function () { return SkillService; });
             /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
             /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+            var data = __webpack_require__(/*! ../../assets/data.json */ "./src/assets/data.json");
             var SkillService = /** @class */ (function () {
                 function SkillService() {
-                    this.skils = [
-                        {
-                            text: 'Angular, Typescript',
-                            icons: [
-                                'angular',
-                                'typescript'
-                            ]
-                        },
-                        {
-                            text: 'React, React Native',
-                            icons: [
-                                'react'
-                            ]
-                        },
-                        {
-                            text: 'Webpack, Gulp',
-                            icons: [
-                                'webpack',
-                                'gulp'
-                            ]
-                        },
-                        {
-                            text: 'Jasmine, Karma',
-                            icons: [
-                                'karma'
-                            ]
-                        },
-                        {
-                            text: 'Node.JS, Express, Socket.IO',
-                            icons: [
-                                'node_alt',
-                            ]
-                        },
-                        {
-                            text: 'Github, NPM',
-                            icons: [
-                                'git',
-                                'npm'
-                            ]
-                        },
-                        {
-                            text: 'MongoDB, MySQL',
-                            icons: [
-                                'database',
-                            ]
-                        },
-                        {
-                            text: 'Visual Studio Code',
-                            icons: [
-                                'vscode',
-                            ]
-                        },
-                        {
-                            text: 'ASP.Net C#',
-                            icons: [
-                                'csharp',
-                            ]
-                        },
-                        {
-                            text: 'WordPress, PHP',
-                            icons: [
-                                'php',
-                            ]
-                        },
-                        {
-                            text: 'p5.js',
-                            icons: [
-                                'p5',
-                            ]
-                        },
-                        {
-                            text: 'Teamwork',
-                            icons: [
-                                //'conduct',
-                                'cake'
-                            ]
-                        }
-                    ];
+                    this.skils = data.sections[this.dataSectionNameByIndex(0)];
                 }
+                SkillService.prototype.dataSectionNameByIndex = function (index) {
+                    return Object.keys(data.sections)[index];
+                };
                 return SkillService;
             }());
             SkillService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -851,69 +797,14 @@
             /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TileService", function () { return TileService; });
             /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
             /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+            var data = __webpack_require__(/*! ../../assets/data.json */ "./src/assets/data.json");
             var TileService = /** @class */ (function () {
                 function TileService() {
-                    this.tiles = [
-                        {
-                            title: "Betterbowl",
-                            thumbnail: "../assets/img/mw29.jpg",
-                            language: "Angular",
-                            url: "https://dev.richardwincott.co.uk/betterbowl"
-                        },
-                        {
-                            title: "Chat",
-                            thumbnail: "../assets/img/mw25.jpg",
-                            language: "Angular, Socket.io",
-                            url: "https://dev.richardwincott.co.uk/chat"
-                        },
-                        {
-                            title: "Slime Football",
-                            thumbnail: "../assets/img/mw28.jpg",
-                            language: "p5.js, Socket.io",
-                            url: "https://dev.richardwincott.co.uk/slime",
-                            githuburl: "https://github.com/richwincott/slime"
-                        },
-                        {
-                            title: "Emoji Jump",
-                            thumbnail: "../assets/img/mw27.jpg",
-                            language: "p5.js, Node, Socket.io",
-                            url: "https://repentantsandykernel--richardwincott.repl.co/"
-                        },
-                        {
-                            title: "USBMusic",
-                            thumbnail: "../assets/img/mw26.jpg",
-                            language: "React, Spotify Api",
-                            url: "https://dev.richardwincott.co.uk/usbmusic",
-                            githuburl: "https://github.com/richwincott/usbmusic"
-                        },
-                        {
-                            title: "Spikes",
-                            thumbnail: "../assets/img/mw24.jpg",
-                            language: "p5.js, Node, Socket.io",
-                            url: "https://dev.richardwincott.co.uk/spikes",
-                            githuburl: "https://github.com/richwincott/spikes"
-                        },
-                        {
-                            title: "Mario",
-                            thumbnail: "../assets/img/mw23.jpg",
-                            language: "Canvas, ES6",
-                            url: "https://dev.richardwincott.co.uk/mario",
-                            githuburl: "https://github.com/richwincott/mario"
-                        },
-                        {
-                            title: "FortressGB Website",
-                            thumbnail: "../assets/img/mw20.jpg",
-                            language: "Wordpress, PHP",
-                            url: "http://www.fortressgb.com/"
-                        },
-                        {
-                            title: "Friends of Pishiobury",
-                            thumbnail: "../assets/img/mw1.jpg",
-                            language: "Angular, PHP",
-                            url: "http://www.friendsofpishioburypark.co.uk/"
-                        }
-                    ];
+                    this.tiles = data.sections[this.dataSectionNameByIndex(2)];
                 }
+                TileService.prototype.dataSectionNameByIndex = function (index) {
+                    return Object.keys(data.sections)[index];
+                };
                 return TileService;
             }());
             TileService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -921,6 +812,15 @@
                     providedIn: 'root'
                 })
             ], TileService);
+            /***/ 
+        }),
+        /***/ "./src/assets/data.json": 
+        /*!******************************!*\
+          !*** ./src/assets/data.json ***!
+          \******************************/
+        /*! exports provided: title, subtitle, header, sections, default */
+        /***/ (function (module) {
+            module.exports = JSON.parse("{\"title\":\"Richard<br/>Wincott\",\"subtitle\":\"Web Developer specialising in Front-end Javascript applications.\",\"header\":\"Welcome to my personal website and online portfolio...\",\"sections\":{\"my tools\":[{\"text\":\"Angular, Typescript\",\"icons\":[\"angular\",\"typescript\"]},{\"text\":\"React, React Native\",\"icons\":[\"react\"]},{\"text\":\"Webpack, Gulp\",\"icons\":[\"webpack\",\"gulp\"]},{\"text\":\"Jasmine, Karma\",\"icons\":[\"karma\"]},{\"text\":\"Node.JS, Express, Socket.IO\",\"icons\":[\"node_alt\"]},{\"text\":\"Github, NPM\",\"icons\":[\"git\",\"npm\"]},{\"text\":\"MongoDB, MySQL\",\"icons\":[\"database\"]},{\"text\":\"Visual Studio Code\",\"icons\":[\"vscode\"]},{\"text\":\"ASP.Net C#\",\"icons\":[\"csharp\"]},{\"text\":\"WordPress, PHP\",\"icons\":[\"php\"]},{\"text\":\"p5.js\",\"icons\":[\"p5\"]},{\"text\":\"Teamwork\",\"icons\":[\"cake\"]}],\"about me\":\"Web developer with 6 years commercial experience. Specialising in Angular and other front-end technologies.<br/><br/>Currently employed by Foster + Partners, working as an Applications Developer.<br/><br/>Previously worked at YOPA as a Javascript developer and before that worked at FortressGB as a Full Stack developer.<br/><br/>Bachelor of Computer Science, 2nd Class Honours Degree. Studied at the University of Hertfordshire and Hertford Regional College.<br/><br/>\",\"projects\":[{\"title\":\"Betterbowl\",\"thumbnail\":\"../assets/img/mw29.jpg\",\"language\":\"Angular\",\"url\":\"https://dev.richardwincott.co.uk/betterbowl\"},{\"title\":\"Chat\",\"thumbnail\":\"../assets/img/mw25.jpg\",\"language\":\"Angular, Socket.io\",\"url\":\"https://dev.richardwincott.co.uk/chat\"},{\"title\":\"Slime Football\",\"thumbnail\":\"../assets/img/mw28.jpg\",\"language\":\"p5.js, Socket.io\",\"url\":\"https://dev.richardwincott.co.uk/slime\",\"githuburl\":\"https://github.com/richwincott/slime\"},{\"title\":\"Emoji Jump\",\"thumbnail\":\"../assets/img/mw27.jpg\",\"language\":\"p5.js, Node, Socket.io\",\"url\":\"https://repentantsandykernel--richardwincott.repl.co/\"},{\"title\":\"USBMusic\",\"thumbnail\":\"../assets/img/mw26.jpg\",\"language\":\"React, Spotify Api\",\"url\":\"https://dev.richardwincott.co.uk/usbmusic\",\"githuburl\":\"https://github.com/richwincott/usbmusic\"},{\"title\":\"Spikes\",\"thumbnail\":\"../assets/img/mw24.jpg\",\"language\":\"p5.js, Node, Socket.io\",\"url\":\"https://dev.richardwincott.co.uk/spikes\",\"githuburl\":\"https://github.com/richwincott/spikes\"},{\"title\":\"Mario\",\"thumbnail\":\"../assets/img/mw23.jpg\",\"language\":\"Canvas, ES6\",\"url\":\"https://dev.richardwincott.co.uk/mario\",\"githuburl\":\"https://github.com/richwincott/mario\"},{\"title\":\"FortressGB Website\",\"thumbnail\":\"../assets/img/mw20.jpg\",\"language\":\"Wordpress, PHP\",\"url\":\"http://www.fortressgb.com/\"},{\"title\":\"Friends of Pishiobury\",\"thumbnail\":\"../assets/img/mw1.jpg\",\"language\":\"Angular, PHP\",\"url\":\"http://www.friendsofpishioburypark.co.uk/\"}],\"get in touch\":{\"mobile\":\"+44 7704 473 460\",\"email\":\"rich.wincott@gmail.com\"}}}");
             /***/ 
         }),
         /***/ "./src/environments/environment.ts": 
