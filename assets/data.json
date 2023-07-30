@@ -1,7 +1,7 @@
 {
   "title": "<b>Hi, I'm Rich</b>, Living in the UK. I am a <b>software engineer</b> specialising in web development. I have a passion for <b>JavaScript</b> and <b>front-end</b> web technologies.",
   "subtitle": "Software engineer specialising in Javascript web applications.",
-  "header": "Welcome to my personal website and online portfolio...",
+  "header": "Welcome to my Personal project website and online portfolio...",
   "sections": {
     "my tools": [
       {
@@ -50,7 +50,7 @@
         ]
       },
       {
-        "text": "Visual Studio Code",
+        "text": "Visual Studio, VSCode",
         "icons": [
           "vscode"
         ]
@@ -80,24 +80,41 @@
         ]
       }
     ],
-    "about me": "Software engineer with <b>8 years</b> commercial experience. Specialising in front-end web technologies.<br/><br/>Currently employed by <b>Foster + Partners</b>, working as a <b>Senior Lead Developer</b>.<br/><br/><span hidden>Previously worked at YOPA as a Javascript developer and before that worked at FortressGB as a Full Stack developer.<br/><br/></span>Bachelor of <b>Computer Science</b>, 2nd Class Honours Degree. Studied at the University of Hertfordshire and Hertford Regional College.<br/><br/>",
+    "about me": "Software engineer with <b>12 years</b> commercial experience. Specialising in front-end web technologies.<br/><br/>Currently employed by <b>Foster + Partners</b>, working as a <b>Senior Lead Developer</b>.<br/><br/><span hidden>Previously worked at YOPA as a Javascript developer and before that worked at FortressGB as a Full Stack developer.<br/><br/></span>Bachelor of <b>Computer Science</b>, 2nd Class Honours Degree. Studied at the University of Hertfordshire and Hertford Regional College.<br/><br/>",
     "projects": [
+      {
+        "title": "Foster and Partners",
+        "thumbnail": "https://www.fosterandpartners.com/assets/ico/favicon-192x192.png",
+        "language": "Angular",
+        "type": "Work",
+        "url": "http://fosterandpartners.com"
+      },
       {
         "title": "Betterbowl",
         "thumbnail": "../assets/img/mw29.jpg",
         "language": "Angular",
-        "url": "https://betterbowl.co.uk"
+        "type": "Freelance",
+        "url": "http://betterbowl.co.uk"
+      },
+      {
+        "title": "Friends of Pishiobury",
+        "thumbnail": "../assets/img/mw1.jpg",
+        "language": "Angular, PHP",
+        "type": "Freelance",
+        "url": "http://www.friendsofpishioburypark.co.uk/"
       },
       {
         "title": "Chat",
         "thumbnail": "../assets/img/mw25.jpg",
         "language": "Angular, Socket.io",
+        "type": "Personal project",
         "url": "https://dev.richardwincott.co.uk/chat"
       },
       {
         "title": "Slime Football",
         "thumbnail": "../assets/img/mw28.jpg",
         "language": "p5.js, Socket.io",
+        "type": "Personal game",
         "url": "https://dev.richardwincott.co.uk/slime",
         "githuburl": "https://github.com/richwincott/slime"
       },
@@ -105,12 +122,14 @@
         "title": "Emoji Jump",
         "thumbnail": "../assets/img/mw27.jpg",
         "language": "p5.js, Node, Socket.io",
+        "type": "Personal game",
         "url": "https://repentantsandykernel--richardwincott.repl.co/"
       },
       {
         "title": "Music Player",
         "thumbnail": "../assets/img/mw26.jpg",
         "language": "React, Spotify Api",
+        "type": "Personal project",
         "url": "https://dev.richardwincott.co.uk/usbmusic",
         "githuburl": "https://github.com/richwincott/usbmusic"
       },
@@ -118,6 +137,7 @@
         "title": "Spikes",
         "thumbnail": "../assets/img/mw24.jpg",
         "language": "p5.js, Node, Socket.io",
+        "type": "Personal game",
         "url": "https://dev.richardwincott.co.uk/spikes",
         "githuburl": "https://github.com/richwincott/spikes"
       },
@@ -125,20 +145,9 @@
         "title": "Mario",
         "thumbnail": "../assets/img/mw23.jpg",
         "language": "Canvas, ES6",
+        "type": "Personal game",
         "url": "https://dev.richardwincott.co.uk/mario",
         "githuburl": "https://github.com/richwincott/mario"
-      },
-      {
-        "title": "FortressGB Website",
-        "thumbnail": "../assets/img/mw20.jpg",
-        "language": "Wordpress, PHP",
-        "url": "http://www.fortressgb.com/"
-      },
-      {
-        "title": "Friends of Pishiobury",
-        "thumbnail": "../assets/img/mw1.jpg",
-        "language": "Angular, PHP",
-        "url": "http://www.friendsofpishioburypark.co.uk/"
       }
     ],
     "get in touch": {
