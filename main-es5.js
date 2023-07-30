@@ -28,7 +28,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<section class=\"header\">\n  <div class=\"container\">\n\n    <div id=\"logo-and-icons\" class=\"justify-content-between\">\n      <div class=\"d-flex align-items-center\">\n        <img style=\"height: 2.5rem;\" src=\"../assets/img/rw_logo.png\" /> <b id=\"name\">Richard Wincott</b>\n      </div>\n      <div>\n        <ul class=\"list-unstyled mb-0\">\n          <li class=\"social git\">\n            <a href=\"https://github.com/richwincott\" target=\"_blank\"><i class=\"fa fa-github-alt fa-lg\" aria-hidden=\"true\"></i></a>\n          </li>\n          <li class=\"social facebook\">\n            <a href=\"https://www.instagram.com/rich0891\" target=\"_blank\"><i class=\"fa fa-instagram fa-lg\" aria-hidden=\"true\"></i></a>\n          </li>\n          <li class=\"social linkedin\">\n            <a href=\"https://www.linkedin.com/in/richard-wincott-91040b134\" target=\"_blank\"><i class=\"fa fa-linkedin fa-lg\" aria-hidden=\"true\"></i></a>\n          </li>\n        </ul>\n      </div>\n    </div>\n\n    <h1 id=\"banner-text\" [innerHTML]=\"data.title\"></h1>\n\n    <div class=\"d-flex align-text-center justify-content-center\">\n      <div>\n        <div class=\"profile-picture\" style=\"background-image: url('../assets/img/profile.jpg');\"></div>\n      </div>\n      <div class=\"tagline d-flex align-items-center ml-0\">{{data.subtitle}}</div>\n    </div>\n\n  </div>\n</section>\n\n<section class=\"content\">\n  <router-outlet></router-outlet>\n</section>\n\n<div class=\"footer\">\n\n  <div class=\"container\">\n    <br />\n    <hr>\n\n    <div class=\"d-flex align-items-between\">\n      <div class=\"d-flex align-items-center\" style=\"flex: 1\">\n        &copy; {{currentYear}} Richard Wincott\n      </div>\n      <ul class=\"list-unstyled mb-0\">\n        <li class=\"social git\">\n          <a href=\"https://github.com/richwincott\" target=\"_blank\"><i class=\"fa fa-github-alt fa-lg\" aria-hidden=\"true\"></i></a>\n        </li>\n        <li class=\"social facebook\">\n          <a href=\"https://www.instagram.com/rich0891\" target=\"_blank\"><i class=\"fa fa-instagram fa-lg\" aria-hidden=\"true\"></i></a>\n        </li>\n        <li class=\"social linkedin\">\n          <a href=\"https://www.linkedin.com/in/richard-wincott-91040b134\" target=\"_blank\"><i class=\"fa fa-linkedin fa-lg\" aria-hidden=\"true\"></i></a>\n        </li>\n      </ul>\n    </div>\n  </div>\n\n</div>");
+            /* harmony default export */ __webpack_exports__["default"] = ("<router-outlet></router-outlet>");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/index/index.component.html": 
@@ -39,7 +39,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\r\n  <div class=\"\">\r\n    <br /><br />\r\n\r\n\r\n    <br />\r\n\r\n    <br />\r\n    <div class=\"icons\">\r\n      <div class=\"container-fluid\">\r\n        <div class=\"row\">\r\n          <div class=\"col-xs-12 col-sm-6 icon-container\" *ngFor=\"let skill of skils\">\r\n            <div class=\"icon-container-innner\">\r\n              <span *ngFor=\"let icon of skill.icons\"><img class=\"icon\" [src]=\"'../assets/img/icons/' + icon + '.png'\" />&nbsp;</span>\r\n              {{skill.text}}\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n\r\n    <br /><br />\r\n\r\n    <div class=\"block-text mt-3\" [innerHTML]=\"data.sections[this.dataSectionNameByIndex(1)]\"></div>\r\n\r\n    <br />\r\n\r\n    <br />\r\n    <div class=\"tiles\">\r\n      <div class=\"container-fluid p-0\">\r\n        <div class=\"row text-center \" style=\"width: auto; justify-content: center;\">\r\n          <div class=\"col-xs-6 col-md-6 col-lg-4 col-xl-3 tile\" (click)=\"openTile(i)\" *ngFor=\"let tile of tiles; let i = index;\" style=\"cursor:pointer\">\r\n            <div class=\"project-container-inner\">\r\n              <div class=\"thumbnail\" [ngStyle]=\"{'background-image': 'url(' + tile.thumbnail + ')'}\">\r\n\r\n              </div>\r\n              <div class=\"info\">\r\n                <div class=\"title\">{{tile.title}}</div>\r\n                <div class=\"subtitle\">\r\n                  <span><img src=\"../assets/img/code_tag.png\" /> {{tile.language}}</span>\r\n                  <br />\r\n                  <span *ngIf=\"tile.githuburl\"><a [href]=\"tile.githuburl\">View on Github</a></span>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n\r\n    <br />\r\n\r\n    <div class=\"block-text mt-4\">\r\n      Mobile: <span class=\"phone-number\">{{data.sections[this.dataSectionNameByIndex(3)].mobile}}</span>\r\n      <br><br>\r\n      Email: <a href=\"mailto:{{data.sections[this.dataSectionNameByIndex(3)].email}}\">{{data.sections[this.dataSectionNameByIndex(3)].email}}</a><br>\r\n    </div>\r\n\r\n    <br /><br />\r\n  </div>\r\n</div>");
+            /* harmony default export */ __webpack_exports__["default"] = ("<section class=\"header\">\r\n  <div class=\"container\">\r\n\r\n    <div id=\"logo-and-icons\" class=\"justify-content-between\">\r\n      <div class=\"d-flex align-items-center\">\r\n        <img style=\"height: 2.5rem;\" src=\"../assets/img/rw_logo.png\" /> <b id=\"name\">Richard Wincott</b>\r\n      </div>\r\n      <div>\r\n        <ul class=\"list-unstyled mb-0\">\r\n          <li class=\"social git\">\r\n            <a href=\"https://github.com/richwincott\" target=\"_blank\"><i class=\"fa fa-github-alt fa-lg\" aria-hidden=\"true\"></i></a>\r\n          </li>\r\n          <li class=\"social facebook\">\r\n            <a href=\"https://www.instagram.com/rich0891\" target=\"_blank\"><i class=\"fa fa-instagram fa-lg\" aria-hidden=\"true\"></i></a>\r\n          </li>\r\n          <li class=\"social linkedin\">\r\n            <a href=\"https://www.linkedin.com/in/richard-wincott-91040b134\" target=\"_blank\"><i class=\"fa fa-linkedin fa-lg\" aria-hidden=\"true\"></i></a>\r\n          </li>\r\n        </ul>\r\n      </div>\r\n    </div>\r\n\r\n    <h1 id=\"banner-text\" [innerHTML]=\"data.title\"></h1>\r\n\r\n    <div class=\"d-flex align-text-center justify-content-center\">\r\n      <div>\r\n        <div class=\"profile-picture\" style=\"background-image: url('../assets/img/profile.jpg');\"></div>\r\n      </div>\r\n      <div class=\"tagline d-flex align-items-center ml-0\">{{data.subtitle}}</div>\r\n    </div>\r\n\r\n  </div>\r\n</section>\r\n\r\n<section class=\"content\">\r\n  <div class=\"container\">\r\n    <div class=\"\">\r\n      <br /><br />\r\n\r\n\r\n      <br />\r\n\r\n      <br />\r\n      <div class=\"icons\">\r\n        <div class=\"container-fluid\">\r\n          <div class=\"row\">\r\n            <div class=\"col-xs-12 col-sm-6 icon-container\" *ngFor=\"let skill of skils\">\r\n              <div class=\"icon-container-innner\">\r\n                <span *ngFor=\"let icon of skill.icons\"><img class=\"icon\" [src]=\"'../assets/img/icons/' + icon + '.png'\" />&nbsp;</span>\r\n                {{skill.text}}\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n\r\n      <br /><br />\r\n\r\n      <div class=\"block-text mt-3\" [innerHTML]=\"data.sections[this.dataSectionNameByIndex(1)]\"></div>\r\n\r\n      <br />\r\n\r\n      <br />\r\n      <div class=\"tiles\">\r\n        <div class=\"container-fluid p-0\">\r\n          <div class=\"row text-center \" style=\"width: auto; justify-content: center;\">\r\n            <div class=\"col-xs-6 col-md-6 col-lg-4 col-xl-3 tile\" (click)=\"openTile(i)\" *ngFor=\"let tile of tiles; let i = index;\" style=\"cursor:pointer\">\r\n              <div class=\"project-container-inner\">\r\n                <div class=\"thumbnail\" [ngStyle]=\"{'background-image': 'url(' + tile.thumbnail + ')'}\">\r\n\r\n                </div>\r\n                <div class=\"info\">\r\n                  <div class=\"title\">{{tile.title}}</div>\r\n                  <div class=\"subtitle\">\r\n                    <span><img src=\"../assets/img/code_tag.png\" /> {{tile.language}}</span>\r\n                    <br />\r\n                    <span *ngIf=\"tile.githuburl\"><a [href]=\"tile.githuburl\">View on Github</a></span>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n\r\n      <br />\r\n\r\n      <div class=\"block-text mt-4\">\r\n        Mobile: <span class=\"phone-number\">{{data.sections[this.dataSectionNameByIndex(3)].mobile}}</span>\r\n        <br><br>\r\n        Email: <a href=\"mailto:{{data.sections[this.dataSectionNameByIndex(3)].email}}\">{{data.sections[this.dataSectionNameByIndex(3)].email}}</a><br>\r\n      </div>\r\n\r\n      <br /><br />\r\n    </div>\r\n  </div>\r\n</section>\r\n\r\n<div class=\"footer\">\r\n\r\n  <div class=\"container\">\r\n    <br />\r\n    <hr>\r\n\r\n    <div class=\"d-flex align-items-between\">\r\n      <div class=\"d-flex align-items-center\" style=\"flex: 1\">\r\n        &copy; {{currentYear}} Richard Wincott\r\n      </div>\r\n      <ul class=\"list-unstyled mb-0\">\r\n        <li class=\"social git\">\r\n          <a href=\"https://github.com/richwincott\" target=\"_blank\"><i class=\"fa fa-github-alt fa-lg\" aria-hidden=\"true\"></i></a>\r\n        </li>\r\n        <li class=\"social facebook\">\r\n          <a href=\"https://www.instagram.com/rich0891\" target=\"_blank\"><i class=\"fa fa-instagram fa-lg\" aria-hidden=\"true\"></i></a>\r\n        </li>\r\n        <li class=\"social linkedin\">\r\n          <a href=\"https://www.linkedin.com/in/richard-wincott-91040b134\" target=\"_blank\"><i class=\"fa fa-linkedin fa-lg\" aria-hidden=\"true\"></i></a>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n  </div>\r\n\r\n</div>");
             /***/ 
         }),
         /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/page-not-found/page-not-found.component.html": 
@@ -425,102 +425,11 @@
             /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function () { return AppComponent; });
             /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
             /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-            /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
-            var data = __webpack_require__(/*! ../assets/data.json */ "./src/assets/data.json");
             var AppComponent = /** @class */ (function () {
-                function AppComponent(router) {
-                    this.router = router;
-                    this.toggleMenu = false;
-                    this.scrollTop = 0;
-                    this.navItems = [
-                        {
-                            active: true,
-                            label: "my tools",
-                            anchor: "skills",
-                            position: null
-                        },
-                        {
-                            active: false,
-                            label: "about me",
-                            anchor: "about",
-                            position: null
-                        },
-                        {
-                            active: false,
-                            label: "projects",
-                            anchor: "projects",
-                            position: null
-                        },
-                        {
-                            active: false,
-                            label: "get in touch",
-                            anchor: "contact",
-                            position: null
-                        }
-                    ];
+                function AppComponent() {
                 }
-                Object.defineProperty(AppComponent.prototype, "data", {
-                    get: function () {
-                        return data;
-                    },
-                    enumerable: true,
-                    configurable: true
-                });
-                AppComponent.prototype.ngOnInit = function () {
-                    this.currentYear = new Date().getFullYear().toString();
-                    // VERY HACKY TEMP SOLUTION TO STYLE .SIDEBAR::BEFORE BACKGROUND-POSITION-X
-                    /* let style = document.createElement('style');
-                    style.setAttribute('id', 'skjdfjhsk');
-                    style.innerHTML = '.sidebar::before { background-position-x: -242px }';
-                    document.head.appendChild(style); */
-                    /* window.addEventListener('scroll', (event: any) => {
-                      let scrollTop = event.target.scrollingElement.scrollTop;
-                
-                      let finalValue = '-' + (242 - (scrollTop / 80)) + 'px';
-                      let style = document.querySelector('#skjdfjhsk');
-                      style.innerHTML = '.sidebar::before { background-position-x: ' + finalValue + ' }';
-                
-                      var itemsPassed = [];
-                      this.navItems.forEach((item) => {
-                        let $element: any = document.querySelector('#' + item.anchor);
-                        item.position = $element.offsetTop;
-                        item.active = false;
-                        if (scrollTop >= item.position - 30) {
-                          itemsPassed.push(item);
-                        }
-                      })
-                      this.navItems[itemsPassed.length].active = true;
-                    }) */
-                };
-                AppComponent.prototype.gotoAnchorTag = function (event, name) {
-                    event.preventDefault();
-                    this.toggleMenu = false;
-                    var $element = document.querySelector('#' + name);
-                    if (!$element) {
-                        this.router.navigate(['']).then(function () {
-                            setTimeout(function () {
-                                //$element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-                                window.scrollTo({
-                                    top: $element.offsetTop < 200 ? 0 : $element.offsetTop - 150,
-                                    behavior: "smooth"
-                                });
-                            }, 100);
-                        });
-                    }
-                    else {
-                        $element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
-                        window.scrollTo({
-                            top: $element.offsetTop < 200 ? 0 : $element.offsetTop - 150,
-                            behavior: "smooth"
-                        });
-                    }
-                    //window.location.href = '/#' + tag;
-                };
                 return AppComponent;
             }());
-            AppComponent.ctorParameters = function () { return [
-                { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }
-            ]; };
             AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
                 Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
                     selector: 'app-root',
@@ -606,6 +515,32 @@
                     this.router = router;
                     this.tileService = tileService;
                     this.skillService = skillService;
+                    this.navItems = [
+                        {
+                            active: true,
+                            label: "my tools",
+                            anchor: "skills",
+                            position: null
+                        },
+                        {
+                            active: false,
+                            label: "about me",
+                            anchor: "about",
+                            position: null
+                        },
+                        {
+                            active: false,
+                            label: "projects",
+                            anchor: "projects",
+                            position: null
+                        },
+                        {
+                            active: false,
+                            label: "get in touch",
+                            anchor: "contact",
+                            position: null
+                        }
+                    ];
                 }
                 Object.defineProperty(IndexComponent.prototype, "tiles", {
                     get: function () {
@@ -629,6 +564,7 @@
                     configurable: true
                 });
                 IndexComponent.prototype.ngOnInit = function () {
+                    this.currentYear = new Date().getFullYear().toString();
                 };
                 IndexComponent.prototype.dataSectionNameByIndex = function (index) {
                     return Object.keys(data.sections)[index];
@@ -641,11 +577,6 @@
                     else {
                         window.open(tile.url, '_blank');
                     }
-                };
-                IndexComponent.prototype.gotoAnchorTag = function (event, $element) {
-                    event.preventDefault();
-                    $element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
-                    //window.location.href = '/#' + tag;
                 };
                 return IndexComponent;
             }());
@@ -709,7 +640,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = (":host {\n  position: relative;\n}\n\nbutton {\n  position: absolute;\n  top: 10px;\n  left: 10px;\n  z-index: 100;\n}\n\n@media (max-width: 767px) {\n  button {\n    display: none;\n  }\n}\n\niframe {\n  display: block;\n  height: 100vh;\n  width: 100%;\n  background: url('loading.gif') center center no-repeat;\n  background-size: 130px;\n  overflow-x: hidden;\n  box-shadow: 0px 0px 10px #ccc;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wcm9qZWN0LXZpZXdlci9DOlxcUHJvamVjdHNcXHJpY2hhcmR3aW5jb3R0LmNvLnVrL3NyY1xcYXBwXFxjb21wb25lbnRzXFxwcm9qZWN0LXZpZXdlclxccHJvamVjdC12aWV3ZXIuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2NvbXBvbmVudHMvcHJvamVjdC12aWV3ZXIvcHJvamVjdC12aWV3ZXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxrQkFBQTtBQ0NGOztBREVBO0VBS0ksa0JBQUE7RUFDQSxTQUFBO0VBQ0EsVUFBQTtFQUNBLFlBQUE7QUNISjs7QURKSTtFQURKO0lBRVEsYUFBQTtFQ09OO0FBQ0Y7O0FEQ0E7RUFDSSxjQUFBO0VBQ0EsYUFBQTtFQUNBLFdBQUE7RUFDQSxzREFBQTtFQUNBLHNCQUFBO0VBQ0Esa0JBQUE7RUFDQSw2QkFBQTtBQ0VKIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9wcm9qZWN0LXZpZXdlci9wcm9qZWN0LXZpZXdlci5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIjpob3N0IHtcclxuICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbn1cclxuXHJcbmJ1dHRvbiB7XHJcbiAgICBAbWVkaWEgKG1heC13aWR0aDogNzY3cHgpIHtcclxuICAgICAgICBkaXNwbGF5OiBub25lO1xyXG4gICAgfVxyXG5cclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIHRvcDogMTBweDtcclxuICAgIGxlZnQ6IDEwcHg7XHJcbiAgICB6LWluZGV4OiAxMDA7XHJcbn1cclxuXHJcbmlmcmFtZSB7XHJcbiAgICBkaXNwbGF5OiBibG9jaztcclxuICAgIGhlaWdodDogMTAwdmg7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGJhY2tncm91bmQ6IHVybCgnLi4vLi4vLi4vYXNzZXRzL2ltZy9sb2FkaW5nLmdpZicpIGNlbnRlciBjZW50ZXIgbm8tcmVwZWF0O1xyXG4gICAgYmFja2dyb3VuZC1zaXplOiAxMzBweDtcclxuICAgIG92ZXJmbG93LXg6IGhpZGRlbjtcclxuICAgIGJveC1zaGFkb3c6IDBweCAwcHggMTBweCAjY2NjO1xyXG59IiwiOmhvc3Qge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG59XG5cbmJ1dHRvbiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAxMHB4O1xuICBsZWZ0OiAxMHB4O1xuICB6LWluZGV4OiAxMDA7XG59XG5AbWVkaWEgKG1heC13aWR0aDogNzY3cHgpIHtcbiAgYnV0dG9uIHtcbiAgICBkaXNwbGF5OiBub25lO1xuICB9XG59XG5cbmlmcmFtZSB7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICBoZWlnaHQ6IDEwMHZoO1xuICB3aWR0aDogMTAwJTtcbiAgYmFja2dyb3VuZDogdXJsKFwiLi4vLi4vLi4vYXNzZXRzL2ltZy9sb2FkaW5nLmdpZlwiKSBjZW50ZXIgY2VudGVyIG5vLXJlcGVhdDtcbiAgYmFja2dyb3VuZC1zaXplOiAxMzBweDtcbiAgb3ZlcmZsb3cteDogaGlkZGVuO1xuICBib3gtc2hhZG93OiAwcHggMHB4IDEwcHggI2NjYztcbn0iXX0= */");
+            /* harmony default export */ __webpack_exports__["default"] = (":host {\n  position: relative;\n}\n\nbutton {\n  margin: 10px;\n  z-index: 100;\n}\n\niframe {\n  display: block;\n  height: calc(100vh - 58px);\n  width: 100%;\n  background: url('loading.gif') center center no-repeat;\n  background-size: 130px;\n  overflow-x: hidden;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wcm9qZWN0LXZpZXdlci9DOlxcUHJvamVjdHNcXHJpY2hhcmR3aW5jb3R0LmNvLnVrL3NyY1xcYXBwXFxjb21wb25lbnRzXFxwcm9qZWN0LXZpZXdlclxccHJvamVjdC12aWV3ZXIuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2NvbXBvbmVudHMvcHJvamVjdC12aWV3ZXIvcHJvamVjdC12aWV3ZXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxrQkFBQTtBQ0NGOztBREVBO0VBQ0ksWUFBQTtFQUNBLFlBQUE7QUNDSjs7QURFQTtFQUNJLGNBQUE7RUFDQSwwQkFBQTtFQUNBLFdBQUE7RUFDQSxzREFBQTtFQUNBLHNCQUFBO0VBQ0Esa0JBQUE7QUNDSiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcHJvamVjdC12aWV3ZXIvcHJvamVjdC12aWV3ZXIuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyI6aG9zdCB7XHJcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG59XHJcblxyXG5idXR0b24ge1xyXG4gICAgbWFyZ2luOiAxMHB4O1xyXG4gICAgei1pbmRleDogMTAwO1xyXG59XHJcblxyXG5pZnJhbWUge1xyXG4gICAgZGlzcGxheTogYmxvY2s7XHJcbiAgICBoZWlnaHQ6IGNhbGMoMTAwdmggLSA1OHB4KTtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgYmFja2dyb3VuZDogdXJsKCcuLi8uLi8uLi9hc3NldHMvaW1nL2xvYWRpbmcuZ2lmJykgY2VudGVyIGNlbnRlciBuby1yZXBlYXQ7XHJcbiAgICBiYWNrZ3JvdW5kLXNpemU6IDEzMHB4O1xyXG4gICAgb3ZlcmZsb3cteDogaGlkZGVuO1xyXG59IiwiOmhvc3Qge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG59XG5cbmJ1dHRvbiB7XG4gIG1hcmdpbjogMTBweDtcbiAgei1pbmRleDogMTAwO1xufVxuXG5pZnJhbWUge1xuICBkaXNwbGF5OiBibG9jaztcbiAgaGVpZ2h0OiBjYWxjKDEwMHZoIC0gNThweCk7XG4gIHdpZHRoOiAxMDAlO1xuICBiYWNrZ3JvdW5kOiB1cmwoXCIuLi8uLi8uLi9hc3NldHMvaW1nL2xvYWRpbmcuZ2lmXCIpIGNlbnRlciBjZW50ZXIgbm8tcmVwZWF0O1xuICBiYWNrZ3JvdW5kLXNpemU6IDEzMHB4O1xuICBvdmVyZmxvdy14OiBoaWRkZW47XG59Il19 */");
             /***/ 
         }),
         /***/ "./src/app/components/project-viewer/project-viewer.component.ts": 
@@ -742,15 +673,8 @@
                 ProjectViewerComponent.prototype.ngOnInit = function () {
                     var id = this.route.snapshot.paramMap.get('id');
                     this.tile = this.tiles[id];
-                    var iframe = document.getElementsByTagName("iframe")[0];
-                    var bodyRect = document.body.getBoundingClientRect(), iframeRect = iframe.getBoundingClientRect(), offset = iframeRect.top - bodyRect.top;
-                    this.backupPosition = bodyRect.top * -1;
-                    console.log(this.backupPosition);
-                    document.body.style.overflow = "hidden";
-                    window.scrollTo(0, offset);
                 };
                 ProjectViewerComponent.prototype.back = function () {
-                    document.body.style.overflow = "scroll";
                     window.scrollTo(0, this.backupPosition);
                 };
                 return ProjectViewerComponent;
