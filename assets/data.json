@@ -86,7 +86,7 @@
         "title": "Betterbowl",
         "thumbnail": "../assets/img/mw29.jpg",
         "language": "Angular",
-        "url": "https://dev.richardwincott.co.uk/betterbowl"
+        "url": "https://betterbowl.co.uk"
       },
       {
         "title": "Chat",
@@ -108,7 +108,7 @@
         "url": "https://repentantsandykernel--richardwincott.repl.co/"
       },
       {
-        "title": "USBMusic",
+        "title": "Music Player",
         "thumbnail": "../assets/img/mw26.jpg",
         "language": "React, Spotify Api",
         "url": "https://dev.richardwincott.co.uk/usbmusic",
