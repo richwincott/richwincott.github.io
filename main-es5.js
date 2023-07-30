@@ -61,7 +61,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<button [routerLink]=\"['']\" class=\"btn btn-dark\">Back</button>\r\n<iframe #iframe [src]=\"sanitizer.bypassSecurityTrustResourceUrl(tile.url)\" frameborder=\"0\"></iframe>");
+            /* harmony default export */ __webpack_exports__["default"] = ("<button [routerLink]=\"['']\" (click)=\"back();\" class=\"btn btn-dark\">Back</button>\r\n<iframe #iframe [src]=\"sanitizer.bypassSecurityTrustResourceUrl(tile.url)\" frameborder=\"0\"></iframe>");
             /***/ 
         }),
         /***/ "./node_modules/tslib/tslib.es6.js": 
@@ -467,29 +467,30 @@
                     configurable: true
                 });
                 AppComponent.prototype.ngOnInit = function () {
-                    var _this = this;
                     this.currentYear = new Date().getFullYear().toString();
                     // VERY HACKY TEMP SOLUTION TO STYLE .SIDEBAR::BEFORE BACKGROUND-POSITION-X
-                    var style = document.createElement('style');
+                    /* let style = document.createElement('style');
                     style.setAttribute('id', 'skjdfjhsk');
                     style.innerHTML = '.sidebar::before { background-position-x: -242px }';
-                    document.head.appendChild(style);
-                    window.addEventListener('scroll', function (event) {
-                        var scrollTop = event.target.scrollingElement.scrollTop;
-                        var finalValue = '-' + (242 - (scrollTop / 80)) + 'px';
-                        var style = document.querySelector('#skjdfjhsk');
-                        style.innerHTML = '.sidebar::before { background-position-x: ' + finalValue + ' }';
-                        var itemsPassed = [];
-                        _this.navItems.forEach(function (item) {
-                            var $element = document.querySelector('#' + item.anchor);
-                            item.position = $element.offsetTop;
-                            item.active = false;
-                            if (scrollTop >= item.position - 30) {
-                                itemsPassed.push(item);
-                            }
-                        });
-                        _this.navItems[itemsPassed.length].active = true;
-                    });
+                    document.head.appendChild(style); */
+                    /* window.addEventListener('scroll', (event: any) => {
+                      let scrollTop = event.target.scrollingElement.scrollTop;
+                
+                      let finalValue = '-' + (242 - (scrollTop / 80)) + 'px';
+                      let style = document.querySelector('#skjdfjhsk');
+                      style.innerHTML = '.sidebar::before { background-position-x: ' + finalValue + ' }';
+                
+                      var itemsPassed = [];
+                      this.navItems.forEach((item) => {
+                        let $element: any = document.querySelector('#' + item.anchor);
+                        item.position = $element.offsetTop;
+                        item.active = false;
+                        if (scrollTop >= item.position - 30) {
+                          itemsPassed.push(item);
+                        }
+                      })
+                      this.navItems[itemsPassed.length].active = true;
+                    }) */
                 };
                 AppComponent.prototype.gotoAnchorTag = function (event, name) {
                     event.preventDefault();
@@ -708,7 +709,7 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("button {\n  position: absolute;\n  top: 32px;\n  left: -106px;\n  z-index: 100;\n}\n@media (max-width: 767px) {\n  button {\n    display: none;\n  }\n}\niframe {\n  display: block;\n  height: 100vh;\n  width: 100%;\n  background: url('loading.gif') center center no-repeat;\n  background-size: 130px;\n  overflow-x: hidden;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wcm9qZWN0LXZpZXdlci9DOlxcUHJvamVjdHNcXHJpY2hhcmR3aW5jb3R0LmNvLnVrL3NyY1xcYXBwXFxjb21wb25lbnRzXFxwcm9qZWN0LXZpZXdlclxccHJvamVjdC12aWV3ZXIuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2NvbXBvbmVudHMvcHJvamVjdC12aWV3ZXIvcHJvamVjdC12aWV3ZXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFLSSxrQkFBQTtFQUNBLFNBQUE7RUFDQSxZQUFBO0VBQ0EsWUFBQTtBQ0hKO0FESkk7RUFESjtJQUVRLGFBQUE7RUNPTjtBQUNGO0FEQ0E7RUFDSSxjQUFBO0VBQ0EsYUFBQTtFQUNBLFdBQUE7RUFDQSxzREFBQTtFQUNBLHNCQUFBO0VBQ0Esa0JBQUE7QUNFSiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcHJvamVjdC12aWV3ZXIvcHJvamVjdC12aWV3ZXIuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJidXR0b24ge1xyXG4gICAgQG1lZGlhIChtYXgtd2lkdGg6IDc2N3B4KSB7XHJcbiAgICAgICAgZGlzcGxheTogbm9uZTtcclxuICAgIH1cclxuXHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICB0b3A6IDMycHg7XHJcbiAgICBsZWZ0OiAtMTA2cHg7XHJcbiAgICB6LWluZGV4OiAxMDA7XHJcbn1cclxuXHJcbmlmcmFtZSB7XHJcbiAgICBkaXNwbGF5OiBibG9jaztcclxuICAgIGhlaWdodDogMTAwdmg7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGJhY2tncm91bmQ6IHVybCgnLi4vLi4vLi4vYXNzZXRzL2ltZy9sb2FkaW5nLmdpZicpIGNlbnRlciBjZW50ZXIgbm8tcmVwZWF0O1xyXG4gICAgYmFja2dyb3VuZC1zaXplOiAxMzBweDtcclxuICAgIG92ZXJmbG93LXg6IGhpZGRlbjtcclxufSIsImJ1dHRvbiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAzMnB4O1xuICBsZWZ0OiAtMTA2cHg7XG4gIHotaW5kZXg6IDEwMDtcbn1cbkBtZWRpYSAobWF4LXdpZHRoOiA3NjdweCkge1xuICBidXR0b24ge1xuICAgIGRpc3BsYXk6IG5vbmU7XG4gIH1cbn1cblxuaWZyYW1lIHtcbiAgZGlzcGxheTogYmxvY2s7XG4gIGhlaWdodDogMTAwdmg7XG4gIHdpZHRoOiAxMDAlO1xuICBiYWNrZ3JvdW5kOiB1cmwoXCIuLi8uLi8uLi9hc3NldHMvaW1nL2xvYWRpbmcuZ2lmXCIpIGNlbnRlciBjZW50ZXIgbm8tcmVwZWF0O1xuICBiYWNrZ3JvdW5kLXNpemU6IDEzMHB4O1xuICBvdmVyZmxvdy14OiBoaWRkZW47XG59Il19 */");
+            /* harmony default export */ __webpack_exports__["default"] = (":host {\n  position: relative;\n}\n\nbutton {\n  position: absolute;\n  top: 10px;\n  left: 10px;\n  z-index: 100;\n}\n\n@media (max-width: 767px) {\n  button {\n    display: none;\n  }\n}\n\niframe {\n  display: block;\n  height: 100vh;\n  width: 100%;\n  background: url('loading.gif') center center no-repeat;\n  background-size: 130px;\n  overflow-x: hidden;\n  box-shadow: 0px 0px 10px #ccc;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wcm9qZWN0LXZpZXdlci9DOlxcUHJvamVjdHNcXHJpY2hhcmR3aW5jb3R0LmNvLnVrL3NyY1xcYXBwXFxjb21wb25lbnRzXFxwcm9qZWN0LXZpZXdlclxccHJvamVjdC12aWV3ZXIuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2NvbXBvbmVudHMvcHJvamVjdC12aWV3ZXIvcHJvamVjdC12aWV3ZXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxrQkFBQTtBQ0NGOztBREVBO0VBS0ksa0JBQUE7RUFDQSxTQUFBO0VBQ0EsVUFBQTtFQUNBLFlBQUE7QUNISjs7QURKSTtFQURKO0lBRVEsYUFBQTtFQ09OO0FBQ0Y7O0FEQ0E7RUFDSSxjQUFBO0VBQ0EsYUFBQTtFQUNBLFdBQUE7RUFDQSxzREFBQTtFQUNBLHNCQUFBO0VBQ0Esa0JBQUE7RUFDQSw2QkFBQTtBQ0VKIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9wcm9qZWN0LXZpZXdlci9wcm9qZWN0LXZpZXdlci5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIjpob3N0IHtcclxuICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbn1cclxuXHJcbmJ1dHRvbiB7XHJcbiAgICBAbWVkaWEgKG1heC13aWR0aDogNzY3cHgpIHtcclxuICAgICAgICBkaXNwbGF5OiBub25lO1xyXG4gICAgfVxyXG5cclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIHRvcDogMTBweDtcclxuICAgIGxlZnQ6IDEwcHg7XHJcbiAgICB6LWluZGV4OiAxMDA7XHJcbn1cclxuXHJcbmlmcmFtZSB7XHJcbiAgICBkaXNwbGF5OiBibG9jaztcclxuICAgIGhlaWdodDogMTAwdmg7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGJhY2tncm91bmQ6IHVybCgnLi4vLi4vLi4vYXNzZXRzL2ltZy9sb2FkaW5nLmdpZicpIGNlbnRlciBjZW50ZXIgbm8tcmVwZWF0O1xyXG4gICAgYmFja2dyb3VuZC1zaXplOiAxMzBweDtcclxuICAgIG92ZXJmbG93LXg6IGhpZGRlbjtcclxuICAgIGJveC1zaGFkb3c6IDBweCAwcHggMTBweCAjY2NjO1xyXG59IiwiOmhvc3Qge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG59XG5cbmJ1dHRvbiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAxMHB4O1xuICBsZWZ0OiAxMHB4O1xuICB6LWluZGV4OiAxMDA7XG59XG5AbWVkaWEgKG1heC13aWR0aDogNzY3cHgpIHtcbiAgYnV0dG9uIHtcbiAgICBkaXNwbGF5OiBub25lO1xuICB9XG59XG5cbmlmcmFtZSB7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICBoZWlnaHQ6IDEwMHZoO1xuICB3aWR0aDogMTAwJTtcbiAgYmFja2dyb3VuZDogdXJsKFwiLi4vLi4vLi4vYXNzZXRzL2ltZy9sb2FkaW5nLmdpZlwiKSBjZW50ZXIgY2VudGVyIG5vLXJlcGVhdDtcbiAgYmFja2dyb3VuZC1zaXplOiAxMzBweDtcbiAgb3ZlcmZsb3cteDogaGlkZGVuO1xuICBib3gtc2hhZG93OiAwcHggMHB4IDEwcHggI2NjYztcbn0iXX0= */");
             /***/ 
         }),
         /***/ "./src/app/components/project-viewer/project-viewer.component.ts": 
@@ -741,6 +742,16 @@
                 ProjectViewerComponent.prototype.ngOnInit = function () {
                     var id = this.route.snapshot.paramMap.get('id');
                     this.tile = this.tiles[id];
+                    var iframe = document.getElementsByTagName("iframe")[0];
+                    var bodyRect = document.body.getBoundingClientRect(), iframeRect = iframe.getBoundingClientRect(), offset = iframeRect.top - bodyRect.top;
+                    this.backupPosition = bodyRect.top * -1;
+                    console.log(this.backupPosition);
+                    document.body.style.overflow = "hidden";
+                    window.scrollTo(0, offset);
+                };
+                ProjectViewerComponent.prototype.back = function () {
+                    document.body.style.overflow = "scroll";
+                    window.scrollTo(0, this.backupPosition);
                 };
                 return ProjectViewerComponent;
             }());
