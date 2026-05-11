@@ -80,11 +80,11 @@
         ]
       }
     ],
-    "about me": "Software engineer with <b>12 years</b> commercial experience. Specialising in front-end web technologies.<br/><br/>Currently employed by <b>Foster + Partners</b>, working as a <b>Senior Lead Developer</b>.<br/><br/><span hidden>Previously worked at YOPA as a Javascript developer and before that worked at FortressGB as a Full Stack developer.<br/><br/></span>Bachelor of <b>Computer Science</b>, 2nd Class Honours Degree. Studied at the University of Hertfordshire and Hertford Regional College.<br/><br/>",
+    "about me": "Software engineer with <b>12+ years</b> commercial experience. Specialising in front-end web technologies.<br/><br/>Currently working on my own <b>tech startup</b> building a web and mobile based <b>dating app</b>.<br/><br/>Previously employed by <b>Foster + Partners</b>, working as a <b>Senior Lead Developer</b>.<br/><br/><span hidden>Previously worked at YOPA as a Javascript developer and before that worked at FortressGB as a Full Stack developer.<br/><br/></span>Bachelor of <b>Computer Science</b>, 2nd Class Honours Degree. Studied at the University of Hertfordshire and Hertford Regional College.<br/><br/>",
     "projects": [
       {
         "title": "Foster and Partners",
-        "thumbnail": "https://www.fosterandpartners.com/assets/ico/favicon-192x192.png",
+        "thumbnail": "../assets/img/fp-192x192.png",
         "language": "Angular",
         "type": "Work",
         "url": "http://fosterandpartners.com"
