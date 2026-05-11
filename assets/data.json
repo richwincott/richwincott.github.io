@@ -1,5 +1,5 @@
 {
-  "title": "<b>Hi, I'm Rich</b>, Living in the UK. I am a <b>software engineer</b> specialising in web development. I have a passion for <b>JavaScript</b> and <b>front-end</b> web technologies.",
+  "title": "Hi, I am a <b>software engineer</b> specialising in web development. I have a passion for <b>JavaScript</b> and <b>front-end</b> web technologies.<br/><small>📍 London, UK</small>",
   "subtitle": "Software engineer specialising in Javascript web applications.",
   "header": "Welcome to my Personal project website and online portfolio...",
   "sections": {
@@ -44,9 +44,10 @@
         ]
       },
       {
-        "text": "MongoDB, MySQL",
+        "text": "MongoDB, MySQL, Postgres",
         "icons": [
-          "database"
+          "database",
+          "postgres"
         ]
       },
       {
@@ -68,15 +69,41 @@
         ]
       },
       {
-        "text": "p5.js",
+        "text": "HTML Canvas, p5.js",
         "icons": [
           "p5"
         ]
       },
       {
-        "text": "Teamwork",
+        "text": "Redis",
         "icons": [
-          "cake"
+          "redis"
+        ]
+      },
+      {
+        "text": "Goggle Cloud, AWS",
+        "icons": [
+          "gcloud",
+          "aws"
+        ]
+      },
+      {
+        "text": "Docker",
+        "icons": [
+          "docker"
+        ]
+      },
+      {
+        "text": "Vercel, Modal",
+        "icons": [
+          "vercel",
+          "modal"
+        ]
+      },
+      {
+        "text": "Unit, E2E Testing",
+        "icons": [
+          "testing"
         ]
       }
     ],
